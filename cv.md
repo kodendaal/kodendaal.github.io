@@ -1,0 +1,11 @@
+---
+layout: single
+title: "Curriculum Vitae"
+sitemap: false
+permalink: /Curriculum/
+author_profile: TRUE
+header:
+  image: /kodendaal_cv.pdf
+---
+
+<embed src="https://kodendaal.github.io/kodendaal_cv.pdf" type="application/pdf" />
