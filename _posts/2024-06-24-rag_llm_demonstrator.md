@@ -38,7 +38,7 @@ RAG combines LLMs with a retrieval system to improve performance and address key
 - **Real-Time Data Access:** Empowering LLMs with up-to-date information.
 
 
-![Flower](https://user-images.githubusercontent.com/4943215/55412447-bcdb6c80-5567-11e9-8d12-b1e35fd5e50c.jpg)
+![rag_framework](http://www.kodendaal.github.io/asset/llm_workflow.png)
 
 
 
