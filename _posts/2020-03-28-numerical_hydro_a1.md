@@ -1,5 +1,5 @@
 ---
-title:  "Numerical Hydrodynamic Assessment Analysis"
+title:  "Numerical Hydrodynamic Assessment"
 mathjax: true
 layout: post
 categories: 
