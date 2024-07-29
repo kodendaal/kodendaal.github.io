@@ -37,6 +37,11 @@ RAG combines LLMs with a retrieval system to improve performance and address key
 - **Mitigating LLM Hallucinations:** Using a reliable database to ensure accuracy.
 - **Real-Time Data Access:** Empowering LLMs with up-to-date information.
 
+
+![Flower](https://user-images.githubusercontent.com/4943215/55412447-bcdb6c80-5567-11e9-8d12-b1e35fd5e50c.jpg)
+
+
+
 **Applications:**
 External:
 - **Knowledge Sharing:** Using LLMs to disseminate information through journals, leaflets, and websites.
