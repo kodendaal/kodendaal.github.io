@@ -51,6 +51,6 @@ The study confirms that the success of clustering and dimensionality reduction m
    - RP shows variable training times but remains comparable to PCA and ICA without clustering.
    - Prediction times are stable across methods, indicating the significant impact of dimensionality reduction and clustering during training rather than prediction.
 
-Overall, PCA, especially when combined with clustering techniques like K-Means, proves to be the most reliable method for achieving a balanced bias-variance trade-off, enhancing the generalization and performance of models on reduced datasets【20:4†source】【20:5†source】.
+Overall, PCA, especially when combined with clustering techniques like K-Means, proves to be the most reliable method for achieving a balanced bias-variance trade-off, enhancing the generalization and performance of models on reduced datasets.
 
 <embed src="https://kodendaal.github.io/assets/unsupervised_learning.pdf" type="application/pdf" width="750" height="1050" />
