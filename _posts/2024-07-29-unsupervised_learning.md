@@ -57,4 +57,4 @@ The study confirms that the success of clustering and dimensionality reduction m
 
 Overall, PCA, especially when combined with clustering techniques like K-Means, proves to be the most reliable method for achieving a balanced bias-variance trade-off, enhancing the generalization and performance of models on reduced datasets.
 
-
+<embed src="https://kodendaal.github.io/assets/unsupervised_learning.pdf" type="application/pdf" width="750" height="1050" />
