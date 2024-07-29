@@ -13,4 +13,4 @@ The adverse human contribution to global climate change has forced the yachting 
 
 **Journal:** [Link1](https://www.sciencedirect.com/science/article/pii/S2092678222000504?via%3Dihub)
 
-**Thesis:** [Link2](https://repository.tudelft.nl/record/uuid:7f98bb20-69f4-4834-84bc-88a6e67963fd)
+**Thesis:** [Link2](https://repository.tudelft.nl/record/uuid:949882f3-60c4-484b-8268-40ce38f43830)
