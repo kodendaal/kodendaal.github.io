@@ -7,7 +7,7 @@ categories:
   - website
 ---
 
-GitHub Repository: https://github.com/kodendaal/rag_pdf_visualizer.git
+**GitHub Repository:** https://github.com/kodendaal/rag_pdf_visualizer.git
 
 ## Challenges of Large Language Models
 
