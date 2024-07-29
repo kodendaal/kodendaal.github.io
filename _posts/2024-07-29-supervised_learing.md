@@ -64,4 +64,5 @@ The study explores various supervised learning problems by evaluating three algo
 These findings provide valuable insights into the strengths and limitations of each supervised learning algorithm, emphasizing the need for tailored approaches based on the specific characteristics of the datasets.
 
 
-[link][www.github.com/kodendaal]
+<embed src="https://kodendaal.github.io/assets/supervised_learning.pdf" type="application/pdf" width="750" height="1050" />
+
