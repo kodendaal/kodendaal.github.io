@@ -1,5 +1,5 @@
 ---
-title:  "Numerical Planing Vessel Analysis"
+title:  "Non-Convex Path Optimization"
 mathjax: true
 layout: post
 categories: 
