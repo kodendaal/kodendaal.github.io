@@ -1,5 +1,5 @@
 ---
-title:  "Supervised Learning Exploration"
+title:  "Exploration of Various Supervised Learning Algorithms"
 mathjax: true
 layout: post
 categories: 
@@ -7,9 +7,7 @@ categories:
   - website
 ---
 
-### Exploration of Various Supervised Learning Algorithms
-
-In this project, I explored various supervised learning problems by evaluating three algorithms: **k-Nearest Neighbors (kNN), Support Vector Classifier (SVC), and Multi-Layer Perceptron (MLP). **Using two distinct datasets, NASA and Wine, I aimed to assess each algorithm's performance and computational efficiency. The data was split into training and hold-out test sets with an 80/20 split, and a 5-fold cross-validation within the training set was used to optimize hyperparameters. Stratified sampling maintained class distribution, ensuring consistency.
+In this project, I explored various supervised learning problems by evaluating three algorithms: **k-Nearest Neighbors (kNN), Support Vector Classifier (SVC), and Multi-Layer Perceptron (MLP)**. Using two distinct datasets, NASA and Wine, I aimed to assess each algorithm's performance and computational efficiency. The data was split into training and hold-out test sets with an 80/20 split, and a 5-fold cross-validation within the training set was used to optimize hyperparameters. Stratified sampling maintained class distribution, ensuring consistency.
 
 For pipeline evaluation, data standardization was applied for uniform assessments. Hyperparameter tuning was conducted using a grid search with 5-fold cross-validation, and learning curves were analyzed to understand the bias-variance trade-off. Performance metrics such as accuracy, precision, recall, and F1-score were used to evaluate the models on the hold-out test dataset, with results compared visually through confusion matrices.
 
