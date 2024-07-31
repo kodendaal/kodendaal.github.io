@@ -1,5 +1,5 @@
 ---
-title:  "RAG Large Language Models"
+title:  "Creation of a RAG Large Language Model demonstrator"
 mathjax: true
 layout: post
 categories: 
