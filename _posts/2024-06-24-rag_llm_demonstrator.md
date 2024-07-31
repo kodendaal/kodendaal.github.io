@@ -42,12 +42,8 @@ One form of context injection is known as Retrieval-Augmented Generation (RAG). 
 ![rag_framework](http://kodendaal.github.io/assets/llm_workflow.png)
 
 
-
 ## Applications
-External:
 - **Knowledge Sharing:** Using LLMs to disseminate information through journals, leaflets, and websites.
-
-Internal:
 - **Report/Journal Summarization and Content Extraction:** Automating the summarization of internal documents.
 - **Writing Aids:** Assisting in marketing, coding, data analysis, and research.
 - **Knowledge Management:** Enhancing database management and information retrieval.
