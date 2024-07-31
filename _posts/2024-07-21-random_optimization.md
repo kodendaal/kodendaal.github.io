@@ -7,37 +7,14 @@ categories:
   - website
 ---
 
-# Summary
+### Random Optimization for Machine Learning Applications
 
-This scientific journal explores various randomized optimization techniques, specifically focusing on **Random Hill Climbing (RHC), Simulated Annealing (SA), and Genetic Algorithms (GA)**. The study aims to evaluate the performance and efficiency of these optimizers on two classic problems: the Four Peaks problem and the Max K-Colour problem. Additionally, the paper examines the application of these optimizers in training neural networks, using the Wine Quality dataset as a case study.
+In my latest exploration, I delved into the world of randomized optimization techniques, focusing on Random Hill Climbing (RHC), Simulated Annealing (SA), and Genetic Algorithms (GA). This study aimed to assess the performance and efficiency of these methods on two classic problems—the Four Peaks problem and the Max K-Colour problem—and their application in training neural networks using the Wine Quality dataset. The performance of these optimizers varied significantly depending on the problem, consistent with the no-free-lunch theorem, which posits no single optimizer excels universally.
 
-## High-Level Conclusions
-### Performance Variability:
+RHC emerged as the fastest optimizer regarding wall-clock time and required minimal parameter tuning. However, it tended to get stuck in local minima, making it less suitable for complex or highly structured problems, though it performed better on simpler or moderately sized problems. SA, on the other hand, demonstrated the ability to escape local optima by initially accepting worse solutions, performing well on problems with many local minima. Its tunable temperature and cooling schedule provided flexibility, but it was computationally expensive and sensitive to the cooling schedule, requiring careful tuning and exhibiting slower overall convergence compared to RHC and backpropagation (BP) used in neural networks.
 
-* The performance of each optimizer varies significantly depending on the specific problem and its complexity. This variability is consistent with the no-free-lunch theorem, which suggests that no single optimizer is universally superior for all problem types.
+GA showed robustness for large, complex problems with many local optima, with its population diversity effectively exploring the solution space. However, it had the longest training time and required significant parameter tuning for population size and mutation rate. Notably, GA showed the lowest performance metrics for the Wine Quality dataset, making it less efficient and cost-effective in this context.
 
-### Random Hill Climbing (RHC):
-
-* Pros: RHC is the fastest optimizer in terms of wall-clock time and requires minimal parameter tuning.
-* Cons: It is prone to getting stuck in local minima and is not suitable for complex or highly structured problems. It performs better on simpler or moderately sized problems .
-
-### Simulated Annealing (SA):
-
-* Pros: SA can escape local optima by accepting worse solutions initially and performs well on problems with many local minima. It is highly flexible due to its tunable temperature and cooling schedule.
-* Cons: SA is computationally expensive and sensitive to the cooling schedule, requiring careful tuning. It has slower overall convergence compared to RHC and backpropagation (BP) used in neural networks .
-
-### Genetic Algorithm (GA):
-
-* Pros: GA is robust for large, complex problems with many local optima, and its population diversity helps explore the solution space effectively.
-* Cons: GA has the longest training time and requires significant parameter tuning for population size and mutation rate. It showed the lowest performance across all metrics for the Wine Dataset, making it less efficient and cost-effective in this context .
-
-## Neural Network Optimization:
-
-* Backpropagation (BP) demonstrated the highest precision and F1-score, making it the most efficient optimizer for the Wine Dataset due to its direct gradient-based approach. SA and RHC performed comparably in accuracy and recall but had lower precision and F1-score compared to BP. GA showed the worst performance in this application, highlighting its inefficiency .
-
-## Conclusion
-
-The analysis underscores the importance of appropriately tuning individual optimizers and comparing multiple options to identify the best performer for each specific problem. Randomized optimization algorithms are particularly effective in navigating non-differentiable, discontinuous, or irregular optimization landscapes. By carefully selecting and tuning these optimizers, better solutions tailored to the unique characteristics of each problem can be achieved .
-
+When optimizing neural networks, backpropagation (BP) outperformed the randomized techniques, demonstrating the highest precision and F1-score due to its direct gradient-based approach. SA and RHC had comparable accuracy and recall but lower precision and F1-scores compared to BP, while GA exhibited the poorest performance. This analysis underscores the necessity of tuning individual optimizers and comparing multiple options to identify the best performer for each specific problem. Randomized optimization algorithms are particularly effective in navigating non-differentiable, discontinuous, or irregular optimization landscapes. By carefully selecting and tuning these optimizers, one can achieve tailored solutions that best fit the unique characteristics of each problem.
 
 <embed src="https://kodendaal.github.io/assets/random_optimization.pdf" type="application/pdf" width="750" height="1050" />
