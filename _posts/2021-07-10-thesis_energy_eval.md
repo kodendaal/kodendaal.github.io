@@ -1,13 +1,11 @@
 ---
-title:  "Enhancing early-stage energy consumption predictions for ships"
+title:  "Enhancing Energy Consumption Predictions for Ships"
 mathjax: true
 layout: post
 categories: 
   = github
   - website
 ---
-
-# Summary
 
 In my graduate project I developed an innovative approach to accurately predict total dynamic energy consumption for yachts using real operational voyage data. This method aimed to bridge the gap between predicted and actual energy consumption, a significant challenge in the yachting industry driven by the need to reduce environmental impact. Utilizing Grey-Box Modelling (GBM), which combines physics-based White-Box Models (WBM) and data-driven Black-Box Models (BBM), I enhanced both accuracy and extrapolation capacity. By analyzing ten months of continuous monitoring data, hindcasted weather, and voyage information from a Feadship fleet yacht, I achieved predictions for propulsion and auxiliary estimates within 3% and 7% error of operational conditions, respectively.
 
