@@ -1,5 +1,5 @@
 ---
-title:  "A Detailed Numerical Analysis of a Planing Vessel"
+title:  "Numerical Assessment and Approximation of Planing Hull Ships"
 mathjax: true
 layout: post
 categories: 
