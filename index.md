@@ -15,9 +15,7 @@ profile:
 
 # Welcome to my professional space! 
 
-
-<img style="float: right;" src="http://kodendaal.github.io/assets/profile_pic.png"/>
-
+<img src="http://kodendaal.github.io/assets/profile_pic.png" style="padding-left: 20px; display: block; border: none; float: right"/>
 
 I am **Kirsten Odendaal**, an internationally experienced engineer passionate about solving complex problems through data-driven insights. My journey began with a foundation in **Mechanical Engineering**, transitioned to **Naval Architecture and Maritime Research**, and has now led me to the exciting realm of **Machine Learning and AI**.
 
