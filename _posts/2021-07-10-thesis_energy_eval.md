@@ -1,5 +1,5 @@
 ---
-title:  "Enhancing early-stage energy consumption predictions"
+title:  "Enhancing early-stage energy consumption predictions for ships"
 mathjax: true
 layout: post
 categories: 
@@ -15,7 +15,7 @@ The process involved developing a sequential modelling methodology that integrat
 
 Ultimately, this project demonstrated the potential of GBM to provide more reliable early-stage energy consumption predictions, helping the yachting industry move towards more sustainable designs. The methodology not only improved prediction accuracy but also offered insights into the dynamic interactions affecting energy consumption, paving the way for future advancements in sustainable yacht design.
 
-# Links to open-open access publications
+# Links to open-access publications
 
 This work was awarded the Maritime Designer of the Year Award 2022 in the Netherlands, recognizing its significant contribution to the field.
 
