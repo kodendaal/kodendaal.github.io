@@ -1,15 +1,11 @@
 ---
-title:  "Numerical Planing Vessel Analysis"
+title:  "A Detailed Numerical Analysis of a Planing Vessel"
 mathjax: true
 layout: post
 categories: 
   = github
   - website
 ---
-
-
-# Summary
-
 
 In this project, I investigated the hydrodynamic characteristics of planing vessels using various computational methods. Traditionally, these characteristics were studied through towing tank experiments, but with advancements in technology, Computational Fluid Dynamics (CFD) has become increasingly relevant. This study compared the results of hydrodynamic calculations using CFD, Savitsky’s Method, and Von Karman’s Method to validate and understand the differences between these approaches.
 
