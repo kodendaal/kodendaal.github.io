@@ -7,54 +7,18 @@ categories:
   - website
 ---
 
-# Summary
-This paper explores the application of various unsupervised learning techniques, specifically clustering and dimensionality reduction, on two datasets: NASA Near-Earth Objects (NEO) and Wine Quality. The study aims to simplify and interpret complex datasets, enhancing data visualization, reducing computational costs, and improving model efficiency.
+### Exploring Unsupervised Learning for Complex Datasets
 
-## Clustering Methods:
-**K-Means**:
-   - Expected to perform efficiently due to its simple iterative process.
-   - May struggle with datasets having non-spherical cluster shapes or varying cluster densities.
+In this project, I delved into the realm of unsupervised learning, applying various clustering and dimensionality reduction techniques to two intriguing datasets: NASA Near-Earth Objects (NEO) and Wine Quality. This exploration aimed to simplify and interpret these complex datasets, enhancing data visualization, reducing computational costs, and improving model efficiency.
 
-**Gaussian Mixture Models (GMM)**:
-   - Uses the Expectation-Maximization algorithm to better capture complex cluster structures.
-   - Provides flexibility at the cost of increased computational complexity and time.
+For clustering, I employed K-Means and Gaussian Mixture Models (GMM). K-Means, with its simple iterative process, performed efficiently but struggled with non-spherical cluster shapes and varying densities. In contrast, GMM, utilizing the Expectation-Maximization algorithm, captured more complex structures but required greater computational resources.
 
-## Dimensionality Reduction Methods:
+On the dimensionality reduction front, I tested Principal Component Analysis (PCA), Independent Component Analysis (ICA), and Random Projection (RP). PCA stood out by preserving overall variance and aiding visualization, while ICA excelled at separating underlying factors but was sensitive to Gaussian noise. RP, though faster, did not maintain data structure as precisely as PCA or ICA, yet proved adequate for neural network training.
 
-**Principal Component Analysis (PCA)**:
-   - Effective in preserving overall variance and structure, aiding in data visualization and reducing noise.
+My findings reinforced the no-free-lunch theorem, highlighting that the effectiveness of these methods is dataset-dependent. K-Means and GMM showed varied performance based on data characteristics, while PCA consistently reduced dimensionality with high variance retention. ICA required more components to preserve structure, especially for the NASA dataset, and RP offered speed at the cost of precision.
 
-**Independent Component Analysis (ICA)**:
-   - Excels in separating underlying factors by maximizing statistical independence.
-   - Performance can vary based on dataset characteristics, particularly in the presence of Gaussian noise.
+Integrating clustering labels with dimensionality reduction generally enhanced model performance. Notably, PCA combined with K-Means struck the best balance between bias and variance, improving neural network performance on reduced datasets. Despite PCA and ICA's higher training times, prediction times remained stable, underscoring the significance of these techniques during training.
 
-**Random Projection (RP)**:
-   - Offers significant speed advantages, especially with large datasets.
-   - May not preserve the exact structure as effectively as PCA or ICA but maintains sufficient structure for neural network training.
-
-## High-Level Conclusions
-
-The study confirms that the success of clustering and dimensionality reduction methods is highly dependent on the specific characteristics of the dataset, aligning with the no-free-lunch theorem. Key conclusions include:
-
-**Performance of Clustering Algorithms**:
-   - K-Means is computationally efficient but may not capture complex cluster shapes.
-   - GMM can model more complex structures but at the cost of higher computational demands.
-   - Both methods show varying results based on the dataset's inherent structure and noise.
-
-**Effectiveness of Dimensionality Reduction Techniques**:
-   - PCA effectively reduces dimensionality while retaining a high degree of variance, proving useful in both datasets.
-   - ICA requires retaining more components to preserve structure, especially for the NASA dataset.
-   - RP demonstrates faster performance but with higher variability and less precision in preserving data structure compared to PCA and ICA.
-
-**Integration with Clustering**:
-   - Incorporating clustering labels (K-Means and GMM) generally enhances model performance across all dimensionality reduction methods.
-   - PCA combined with clustering provides the most consistent improvement in neural network performance, balancing the trade-off between bias and variance.
-
-**Time Complexity**:
-   - PCA and ICA exhibit slightly higher training times, particularly with added clustering methods, due to their computational complexity.
-   - RP shows variable training times but remains comparable to PCA and ICA without clustering.
-   - Prediction times are stable across methods, indicating the significant impact of dimensionality reduction and clustering during training rather than prediction.
-
-Overall, PCA, especially when combined with clustering techniques like K-Means, proves to be the most reliable method for achieving a balanced bias-variance trade-off, enhancing the generalization and performance of models on reduced datasets.
+Overall, this study confirmed PCA, particularly when paired with K-Means clustering, as a reliable method for balancing bias-variance trade-offs, ultimately boosting model generalization and performance on complex datasets.
 
 <embed src="https://kodendaal.github.io/assets/unsupervised_learning.pdf" type="application/pdf" width="750" height="1050" />
