@@ -1,13 +1,11 @@
 ---
-title:  "Random Optimization Exploration"
+title:  "Random Optimization for Machine Learning Applications"
 mathjax: true
 layout: post
 categories: 
   = github
   - website
 ---
-
-### Random Optimization for Machine Learning Applications
 
 In my latest exploration, I delved into the world of randomized optimization techniques, focusing on Random Hill Climbing (RHC), Simulated Annealing (SA), and Genetic Algorithms (GA). This study aimed to assess the performance and efficiency of these methods on two classic problems—the Four Peaks problem and the Max K-Colour problem—and their application in training neural networks using the Wine Quality dataset. The performance of these optimizers varied significantly depending on the problem, consistent with the no-free-lunch theorem, which posits no single optimizer excels universally.
 
