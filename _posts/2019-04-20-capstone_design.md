@@ -8,7 +8,7 @@ categories:
 ---
 
 
-**Winner of the Thorsten Watterodt Award for Excellence in Design**
+### **Winner of the Thorsten Watterodt Award for Excellence in Design**
 
 In the rapidly evolving field of unmanned aerial vehicles (UAVs), a groundbreaking capstone project has emerged, pushing the boundaries of what these versatile machines can accomplish. Our final capstone team from the University of Alberta developed an innovative robotic manipulator arm designed to expand UAV functionality beyond passive data collection and imaging tasks.
 
