@@ -15,4 +15,4 @@ The CFD analysis required careful selection of parameters, such as solver type, 
 
 Key learnings from this project include the importance of choosing the right computational methods and parameters for accurate hydrodynamic analysis. The comparison of CFD with traditional analytical methods demonstrated the advantages and limitations of each approach. This study underscores the potential of CFD in modern ship design, offering a more flexible and detailed analysis compared to traditional methods.
 
-<embed src="https://kodendaal.github.io/assets/numerical_ship_hydro_a2.pdf" type="application/pdf" width="750" height="1050" />
+<embed src="https://kodendaal.github.io/assets/numerical_ship_hydro_a2.pdf" type="application/pdf" width="100%" height="1050" />
