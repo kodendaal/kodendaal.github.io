@@ -24,7 +24,7 @@ While BEM techniques offer fast computational times compared to viscous solvers,
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "8ef44ce133c04e8fa474ad6c78747b08", divId: "adobe-dc-view"});
+		var adobeDCView = new AdobeDC.View({clientId: "79ef659365ef4949aad3901e710fb6e9", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
 			content:{location: {url: "https://kodendaal.github.io/assets/numerical_ship_hydro_a1.pdf"}},
 			metaData:{fileName: "numerical_ship_hydro_a1.pdf"}
