@@ -15,4 +15,8 @@ GA showed robustness for large, complex problems with many local optima, with it
 
 When optimizing neural networks, backpropagation (BP) outperformed the randomized techniques, demonstrating the highest precision and F1-score due to its direct gradient-based approach. SA and RHC had comparable accuracy and recall but lower precision and F1-scores compared to BP, while GA exhibited the poorest performance. This analysis underscores the necessity of tuning individual optimizers and comparing multiple options to identify the best performer for each specific problem. Randomized optimization algorithms are particularly effective in navigating non-differentiable, discontinuous, or irregular optimization landscapes. By carefully selecting and tuning these optimizers, one can achieve tailored solutions that best fit the unique characteristics of each problem.
 
-<embed src="https://kodendaal.github.io/assets/random_optimization.pdf" type="application/pdf" width="100%" height="1050" />
+
+**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href=""https://kodendaal.github.io/assets/random_optimization.pdf" target="_blank">please click here</a> to access the PDF directly.**
+
+<iframe src=""https://kodendaal.github.io/assets/random_optimization.pdf" type="application/pdf" style="overflow: false; -webkit-overflow-scrolling: touch; border: none;" scrolling="yes" width="100%" height="1050"> </iframe>
+
