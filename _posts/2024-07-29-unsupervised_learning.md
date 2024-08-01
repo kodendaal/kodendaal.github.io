@@ -7,7 +7,7 @@ categories:
   - website
 ---
 
-In this project, I delved into the realm of unsupervised learning, a**pplying various clustering and dimensionality reduction techniques** to two intriguing datasets: **NASA Near-Earth Objects (NEO) and Wine Quality. **This exploration aimed to simplify and interpret these complex datasets, enhancing data visualization, reducing computational costs, and improving model efficiency.
+In this project, I delved into the realm of unsupervised learning, **applying various clustering and dimensionality reduction techniques** to two intriguing datasets: **NASA Near-Earth Objects (NEO) and Wine Quality. **This exploration aimed to simplify and interpret these complex datasets, enhancing data visualization, reducing computational costs, and improving model efficiency.
 
 For clustering, I employed K-Means and Gaussian Mixture Models (GMM). K-Means, with its simple iterative process, performed efficiently but struggled with non-spherical cluster shapes and varying densities. In contrast, GMM, utilizing the Expectation-Maximization algorithm, captured more complex structures but required greater computational resources.
 
