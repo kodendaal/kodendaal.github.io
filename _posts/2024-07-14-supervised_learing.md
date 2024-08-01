@@ -20,5 +20,5 @@ Regarding time complexity, kNN had fast training times but slow prediction times
 Future research should integrate advanced techniques like boosting and ensemble methods. Further hyperparameter tuning and feature engineering are essential to improve model performance. Addressing dataset imbalance through oversampling and synthetic data generation could yield better results. These findings provide valuable insights into the strengths and limitations of each supervised learning algorithm, emphasizing the need for tailored approaches based on the specific characteristics of the datasets.
 
 
-<embed src="https://kodendaal.github.io/assets/supervised_learning.pdf" type="application/pdf" width="750" height="1050" />
+<embed src="https://kodendaal.github.io/assets/supervised_learning.pdf" type="application/pdf" width="100%" height="1050" />
 
