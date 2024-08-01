@@ -22,5 +22,14 @@ Overall, this study confirmed PCA, particularly when paired with K-Means cluster
 
 **Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/unsupervised_learning.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
-<iframe src="https://kodendaal.github.io/assets/unsupervised_learning.pdf" type="application/pdf" style="overflow: false; -webkit-overflow-scrolling: touch; border: none;" scrolling="yes" width="100%" height="1050"> </iframe>
-
+<div id="adobe-dc-view" style="width: 100%;"></div>
+<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "8ef44ce133c04e8fa474ad6c78747b08", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://kodendaal.github.io/assets/unsupervised_learning.pdf"}},
+			metaData:{fileName: "unsupervised_learning.pdf"}
+		}, {embedMode: "IN_LINE"});
+	});
+</script>
