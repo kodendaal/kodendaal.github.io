@@ -17,6 +17,6 @@ Ultimately, this project demonstrated the potential of GBM to provide more relia
 
 This work was awarded the Maritime Designer of the Year Award 2022 in the Netherlands, recognizing its significant contribution to the field.
 
-**Journal:** [Link1](https://www.sciencedirect.com/science/article/pii/S2092678222000504?via%3Dihub)
+**[Peer-Reviewd Journal Link](https://www.sciencedirect.com/science/article/pii/S2092678222000504?via%3Dihub)**
 
-**Thesis:** [Link2](https://repository.tudelft.nl/record/uuid:949882f3-60c4-484b-8268-40ce38f43830)
+**[Full MSc. Thesis Link](https://repository.tudelft.nl/record/uuid:949882f3-60c4-484b-8268-40ce38f43830)**
