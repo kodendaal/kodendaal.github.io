@@ -26,7 +26,7 @@ Overall, this study confirmed PCA, particularly when paired with K-Means cluster
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "8ef44ce133c04e8fa474ad6c78747b08", divId: "adobe-dc-view"});
+		var adobeDCView = new AdobeDC.View({clientId: "08ca2f1fff1a41bd9846021c84cb99cd", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
 			content:{location: {url: "https://kodendaal.github.io/assets/unsupervised_learning.pdf"}},
 			metaData:{fileName: "unsupervised_learning.pdf"}
