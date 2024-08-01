@@ -23,7 +23,7 @@ This research highlights the potential for significant time and resource savings
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "8ef44ce133c04e8fa474ad6c78747b08", divId: "adobe-dc-view"});
+		var adobeDCView = new AdobeDC.View({clientId: "39900242628d43fcb69e35da520d8db8", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
 			content:{location: {url: "https://kodendaal.github.io/assets/project_independent.pdf"}},
 			metaData:{fileName: "project_independent.pdf"}
