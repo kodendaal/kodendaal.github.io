@@ -25,7 +25,7 @@ Future research should integrate advanced techniques like boosting and ensemble 
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-		var adobeDCView = new AdobeDC.View({clientId: "8ef44ce133c04e8fa474ad6c78747b08", divId: "adobe-dc-view"});
+		var adobeDCView = new AdobeDC.View({clientId: "88fc5e85e52f40a8907929f42cf063cb", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
 			content:{location: {url: "https://kodendaal.github.io/assets/supervised_learning.pdf"}},
 			metaData:{fileName: "supervised_learning.pdf"}
