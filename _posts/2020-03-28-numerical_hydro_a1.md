@@ -19,4 +19,4 @@ Results showed maximum wave heights of about 0.06m at the bow and stern, with th
 While BEM techniques offer fast computational times compared to viscous solvers, the researchers emphasize the importance of understanding non-viscous flow effects to interpret results accurately. The study concludes that potential flow codes can be powerful tools in ship design when used judiciously, with careful consideration of their limitations and thoughtful interpretation of results.
 
 
-<embed src="https://kodendaal.github.io/assets/numerical_ship_hydro_a1.pdf" type="application/pdf" width="750" height="1050" />
+<embed src="https://kodendaal.github.io/assets/numerical_ship_hydro_a1.pdf" type="application/pdf" width="100%" height="1050" />
