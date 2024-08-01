@@ -20,9 +20,7 @@ Integrating clustering labels with dimensionality reduction generally enhanced m
 Overall, this study confirmed PCA, particularly when paired with K-Means clustering, as a reliable method for balancing bias-variance trade-offs, ultimately boosting model generalization and performance on complex datasets.
 
 
-**If the embedded PDF is not displayed properly, refresh or <a href="https://kodendaal.github.io/assets/unsupervised_learning.pdf" target="_blank">please click here.</a>**
+**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/unsupervised_learning.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
-<div style="overflow: auto; -webkit-overflow-scrolling: touch;height:1050px;" id="my">
-    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://kodendaal.github.io/assets/unsupervised_learning.pdf" type="application/pdf" style="overflow: auto; -webkit-overflow-scrolling: touch; border: none;" scrolling="yes" width="100%" height="100%"> </iframe>
-</div>
+<iframe src="https://kodendaal.github.io/assets/unsupervised_learning.pdf" type="application/pdf" style="overflow: false; -webkit-overflow-scrolling: touch; border: none;" scrolling="yes" width="100%" height="1050"> </iframe>
 
