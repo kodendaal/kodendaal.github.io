@@ -30,9 +30,7 @@ To recreate the three-body problem, I implemented a Python simulation inspired b
 
 The gravitational force between two bodies is given by:
 
-$$
-\mathbf{F} = G \frac{m_1 m_2}{r^2} \hat{r}
-$$
+$$ \mathbf{F} = G \frac{m_1 m_2}{r^2} \hat{r} $$
 
 where:
 - \(G\): Gravitational constant
