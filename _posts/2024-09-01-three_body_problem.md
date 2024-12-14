@@ -62,7 +62,7 @@ v1, v2, v3 = [0.1, 0.2], [-0.2, -0.1], [0.1, -0.1]  # Initial velocities
 #### 3. **Visualization**
 I used `matplotlib` to plot the trajectories of the three bodies. By recording their positions at each time step, I could create dynamic visualizations of their chaotic dance. Here’s the final frame from one of my simulations:
 
-<img src="three_body_problem.gif" alt="Three Body Problem Animation" style="width:100%;max-width:500px;">
+<img src="http://kodendaal.github.io/assets/three_body_problem.gif" alt="Three Body Problem Animation" style="width:100%;max-width:500px;">
 
 I also generated animated GIFs to capture the mesmerizing motion of the bodies over time. You’ll find these embedded throughout the post.
 
