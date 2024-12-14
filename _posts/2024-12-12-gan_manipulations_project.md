@@ -10,6 +10,11 @@ categories:
 
 After an intense and fulfilling journey completing the Deep Learning course at Georgia Tech, I’m thrilled to share a glimpse into my group project’s research. This project tackled an exciting frontier in Generative Adversarial Networks (GANs): making their latent spaces more efficient and controllable for image manipulation. Let’s dive into what we accomplished and why it matters.
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/dog_plushy.png" alt="GAN Manipulation" style="width: 600px; height: auto;">
+</div>
+
+
 ## What Are GAN Latent Spaces, and Why Are They Hard to Control?
 
 GANs, particularly StyleGAN, have revolutionized image synthesis, enabling the creation of highly realistic images. But their power comes with a challenge: controlling their latent spaces—the hidden layers that determine image attributes—is complex and computationally demanding. Fine-grained control, like altering an image’s pose or expression, often requires significant computational resources and expertise. Our project set out to simplify this process, making it both intuitive and efficient.
