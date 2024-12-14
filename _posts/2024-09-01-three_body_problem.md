@@ -2,6 +2,8 @@
 
 With the release of Netflix's adaptation of "The Three-Body Problem," I found myself inspired to take on a small but chaotic project: simulating the three-body problem in classical mechanics. This famous physics puzzle has fascinated scientists for centuries, not just for its theoretical implications but for the sheer beauty of the chaos it produces.
 
+![Three Body Problem](http://kodendaal.github.io/assets/three_body_logo.png)
+
 Here, I’ll walk you through some fundamentals of the three-body problem, my implementation of it in Python, and how I visualized the beautiful, unpredictable trajectories that emerge. If you’re curious about the science or just enjoy watching celestial bodies dance around in complex patterns, this post is for you!
 
 ---
@@ -60,7 +62,7 @@ v1, v2, v3 = [0.1, 0.2], [-0.2, -0.1], [0.1, -0.1]  # Initial velocities
 #### 3. **Visualization**
 I used `matplotlib` to plot the trajectories of the three bodies. By recording their positions at each time step, I could create dynamic visualizations of their chaotic dance. Here’s the final frame from one of my simulations:
 
-![Three-Body Problem Simulation](image.png)
+<img src="three_body_problem.gif" alt="Three Body Problem Animation" style="width:100%;max-width:500px;">
 
 I also generated animated GIFs to capture the mesmerizing motion of the bodies over time. You’ll find these embedded throughout the post.
 
