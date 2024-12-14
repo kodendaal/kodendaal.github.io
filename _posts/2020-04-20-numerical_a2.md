@@ -8,7 +8,7 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/wedges_logo.png" alt="Wedges CFD" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/wedges_logo1.png" alt="Wedges CFD" style="width: 800px; height: auto;">
 </div>
 
 
