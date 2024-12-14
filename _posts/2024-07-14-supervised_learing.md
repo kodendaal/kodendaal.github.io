@@ -1,5 +1,5 @@
 ---
-title:  "A Deep Dive into Supervised Learning"
+title:  "The Art of Choosing the Right Supervised Learning Algorithm"
 mathjax: true
 layout: post
 categories: 
