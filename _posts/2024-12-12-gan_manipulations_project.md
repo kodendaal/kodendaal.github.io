@@ -56,3 +56,16 @@ If you’re curious about our project or want to explore this field, check out o
 
 
 **Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/unsupervised_learning.pdf" target="_blank">please click here</a> to access the PDF directly.**
+
+<div id="adobe-dc-view" style="width: 100%;"></div>
+<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "b2762924d8304880b50f219a20ee4b04", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://kodendaal.github.io/assets/Project_Report_CS_7643.pdf"}},
+			metaData:{fileName: "Project_Report_CS_7643.pdf"}
+		}, {embedMode: "IN_LINE"});
+	});
+</script>
+
