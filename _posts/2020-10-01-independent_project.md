@@ -7,6 +7,10 @@ categories:
   - website
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/ship_long_logo.png" alt="Ship Longitudinal Strength" style="width: 800px; height: auto;">
+</div>
+
 In this independent research project, I explored a critical aspect of ship design: the longitudinal strength of hulls, which is essential for preventing catastrophic failures like fracturing or sinking. The challenge I faced was the complex and time-consuming process of calculating this strength, which involves meticulously inputting up to 5000 individual weight items to model the vessel’s weight distribution. My goal was to streamline this process by applying a detailed sensitivity analysis to evaluate different weight distribution techniques and their impact on longitudinal strength parameters.
 
 I focused on three weight distribution techniques: approximate parabolic, point-wise grouping, and trapezoidal direct. Through a local one-at-a-time sensitivity analysis, I assessed how each method affects still water shear force and bending moment, adhering to a general accuracy requirement of ±10%. My initial findings showed that the parabolic approximation method did not meet the accuracy requirements. Consequently, I expanded the analysis to a large-scale case study with Damen Yachting, using real data to compare the techniques.
