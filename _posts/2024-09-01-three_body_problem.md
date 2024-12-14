@@ -9,7 +9,9 @@ categories:
 
 With the release of Netflix's adaptation of "The Three-Body Problem," I found myself inspired to take on a small but chaotic project: simulating the three-body problem in classical mechanics. This famous physics puzzle has fascinated scientists for centuries, not just for its theoretical implications but for the sheer beauty of the chaos it produces.
 
-![Three Body Problem](http://kodendaal.github.io/assets/three_body_logo.png)
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/three_body_logo.png" alt="Three Body Problem" style="width: 800px; height: auto;">
+</div>
 
 Here, I’ll walk you through some fundamentals of the three-body problem, my implementation of it in Python, and how I visualized the beautiful, unpredictable trajectories that emerge. If you’re curious about the science or just enjoy watching celestial bodies dance around in complex patterns, this post is for you!
 
