@@ -7,13 +7,14 @@ categories:
   - website
 ---
 
-### **Lessons from Asteroids and Wine**
-
-When faced with complex datasets like asteroid attributes and wine quality scores, it’s easy to feel like a miner sifting through a mountain of data in search of gold nuggets. In my recent project, I tackled this very challenge using **clustering** and **dimensionality reduction**—two unsupervised learning techniques that simplify and interpret complex data. Armed with the NASA Near-Earth Objects (NEO) dataset and the Portuguese Wine Quality dataset, I set out to discover patterns, boost model efficiency, and uncover the secrets hidden in the numbers. Here’s what I learned!
-
 <div style="text-align: center;">
   <img src="http://kodendaal.github.io/assets/asteriods_wine_logo.png" alt="Asteriods and Wine" style="width: 800px; height: auto;">
 </div>
+
+
+### **Lessons from Asteroids and Wine**
+
+When faced with complex datasets like asteroid attributes and wine quality scores, it’s easy to feel like a miner sifting through a mountain of data in search of gold nuggets. In my recent project, I tackled this very challenge using **clustering** and **dimensionality reduction**—two unsupervised learning techniques that simplify and interpret complex data. Armed with the NASA Near-Earth Objects (NEO) dataset and the Portuguese Wine Quality dataset, I set out to discover patterns, boost model efficiency, and uncover the secrets hidden in the numbers. Here’s what I learned!
 
 ---
 
