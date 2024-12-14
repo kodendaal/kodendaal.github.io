@@ -1,5 +1,5 @@
 ---
-title:  "Enhancing Ship Hull Design Efficiency Through Sensitivity Analysis"
+title:  "Enhancing Ship Strength and Efficiency Through a Sensitivity Analysis"
 mathjax: true
 layout: post
 categories: 
