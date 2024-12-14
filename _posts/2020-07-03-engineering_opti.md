@@ -18,6 +18,8 @@ The optimization process included developing a model that interpolates waypoints
 
 Key learnings from this project include the importance of selecting appropriate optimization algorithms based on the problem's complexity and the benefits of combining different methods to achieve optimal results. The comparison revealed that while each algorithm has its strengths, their performance can vary significantly depending on the specific problem constraints and variables. This project highlighted the practical applications of path optimization in maritime navigation and provided valuable insights into the strengths and limitations of various optimization techniques.
 
+---
+
 **Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/project_eng_opti.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
 <div id="adobe-dc-view" style="width: 100%;"></div>
