@@ -7,12 +7,11 @@ categories:
   - website
 ---
 
-When you think about optimization, you might imagine a super-smart algorithm breezing through problems with mathematical precision. But what happens when the problem isn’t smooth or straightforward? Enter the quirky stars of this blog post: **Random Hill Climbing (RHC)**, **Simulated Annealing (SA)**, and **Genetic Algorithms (GA)**—a trio of randomized optimization techniques that prove there's more than one way to find a solution.
-
 <div style="text-align: center;">
   <img src="http://kodendaal.github.io/assets/randomness_logo.png" alt="Random Optimization" style="width: 800px; height: auto;">
 </div>
 
+When you think about optimization, you might imagine a super-smart algorithm breezing through problems with mathematical precision. But what happens when the problem isn’t smooth or straightforward? Enter the quirky stars of this blog post: **Random Hill Climbing (RHC)**, **Simulated Annealing (SA)**, and **Genetic Algorithms (GA)**—a trio of randomized optimization techniques that prove there's more than one way to find a solution.
 
 In this post, I’ll walk you through my recent exploration into how these algorithms handle tricky optimization puzzles and even step into the shoes of backpropagation (BP) for training neural networks. Spoiler alert: their performance is as diverse as their personalities!
 
