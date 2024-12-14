@@ -7,6 +7,10 @@ categories:
   - website
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/uav.png" alt="UAV" style="width: 800px; height: auto;">
+</div>
+
 
 ### **Winner of the Thorsten Watterodt Award for Excellence in Design**
 
