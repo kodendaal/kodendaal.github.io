@@ -9,19 +9,24 @@ categories:
 
 When you think about optimization, you might imagine a super-smart algorithm breezing through problems with mathematical precision. But what happens when the problem isn’t smooth or straightforward? Enter the quirky stars of this blog post: **Random Hill Climbing (RHC)**, **Simulated Annealing (SA)**, and **Genetic Algorithms (GA)**—a trio of randomized optimization techniques that prove there's more than one way to find a solution.
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/randomness_logo.png" alt="Random Optimization" style="width: 800px; height: auto;">
+</div>
+
+
 In this post, I’ll walk you through my recent exploration into how these algorithms handle tricky optimization puzzles and even step into the shoes of backpropagation (BP) for training neural networks. Spoiler alert: their performance is as diverse as their personalities!
 
 ---
 
 ## **Meet the Contestants**
 
-### **Random Hill Climbing (RHC)**  
+**Random Hill Climbing (RHC)**  
 RHC is the sprinter of the group—fast, agile, and straightforward. It starts with a random solution, makes small adjustments, and keeps whatever improves the score. But here’s the catch: RHC often gets stuck in local minima, like a hiker who can’t see past the nearest hill. It’s best for simple or moderately sized problems, where its speed really shines.
 
-### **Simulated Annealing (SA)**  
+**Simulated Annealing (SA)**  
 SA is the adventurous one. Inspired by the cooling process in metallurgy, SA allows the occasional “bad” decision early on, which helps it escape local optima. As the “temperature” cools, it becomes more selective, honing in on better solutions. While it’s great for complex landscapes, its computational appetite and reliance on tuning can be challenging.
 
-### **Genetic Algorithms (GA)**  
+**Genetic Algorithms (GA)**  
 GA is the strategist, mimicking natural selection. It evolves a population of solutions over generations, blending and mutating them until it finds the best. This approach is incredibly robust for multi-modal problems but takes the longest time and demands careful tuning of population size and mutation rates.
 
 ---
