@@ -1,13 +1,11 @@
 ---
-title:  "Exploration of Various Supervised Learning Algorithms"
+title:  "Chaos in Motion: Simulating the Three-Body Problem"
 mathjax: true
 layout: post
 categories: 
   = github
   - website
 ---
-
-## Chaos in Motion: Simulating the Three-Body Problem
 
 With the release of Netflix's adaptation of "The Three-Body Problem," I found myself inspired to take on a small but chaotic project: simulating the three-body problem in classical mechanics. This famous physics puzzle has fascinated scientists for centuries, not just for its theoretical implications but for the sheer beauty of the chaos it produces.
 
