@@ -55,7 +55,7 @@ Our work highlights the potential of combining dimensionality reduction with adv
 If you’re curious about our project or want to explore this field, check out our GitHub repository for all the code and supplementary materials. [Github Repository Link](https://github.com/kodendaal/drag-gan-space.git)
 
 
-**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/unsupervised_learning.pdf" target="_blank">please click here</a> to access the PDF directly.**
+**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/Project_Report_CS_7643.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
 <div id="adobe-dc-view" style="width: 100%;"></div>
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
