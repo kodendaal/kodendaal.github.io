@@ -1,5 +1,5 @@
 ---
-title:  "Creation of a RAG-LLM Demonstrator"
+title:  "Context Retrival Language Model: Creation of a RAG Demonstrator"
 mathjax: true
 layout: post
 categories: 
@@ -7,6 +7,9 @@ categories:
   - website
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/rag_demonstrator.png" alt="RAG LLM" style="width: 800px; height: auto;">
+</div>
 
 ## Challenges of Large Language Models
 
