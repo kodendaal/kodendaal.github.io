@@ -1,5 +1,5 @@
 ---
-title:  "Random Optimization for Machine Learning Applications"
+title:  "Quirky World of Randomized Optimization: A Battle of Algorithms"
 mathjax: true
 layout: post
 categories: 
@@ -7,14 +7,70 @@ categories:
   - website
 ---
 
-In this exploration, I delved into the world of randomized optimization techniques, **focusing on Random Hill Climbing (RHC), Simulated Annealing (SA), and Genetic Algorithms (GA).** This study aimed to assess the performance and efficiency of these methods on two classic problems—the Four Peaks problem and the Max K-Colour problem—and their application in training neural networks using the Wine Quality dataset. The performance of these optimizers varied significantly depending on the problem, consistent with the no-free-lunch theorem, which posits no single optimizer excels universally.
+When you think about optimization, you might imagine a super-smart algorithm breezing through problems with mathematical precision. But what happens when the problem isn’t smooth or straightforward? Enter the quirky stars of this blog post: **Random Hill Climbing (RHC)**, **Simulated Annealing (SA)**, and **Genetic Algorithms (GA)**—a trio of randomized optimization techniques that prove there's more than one way to find a solution.
 
-RHC emerged as the fastest optimizer regarding wall-clock time and required minimal parameter tuning. However, it tended to get stuck in local minima, making it less suitable for complex or highly structured problems, though it performed better on simpler or moderately sized problems. SA, on the other hand, demonstrated the ability to escape local optima by initially accepting worse solutions, performing well on problems with many local minima. Its tunable temperature and cooling schedule provided flexibility, but it was computationally expensive and sensitive to the cooling schedule, requiring careful tuning and exhibiting slower overall convergence compared to RHC and backpropagation (BP) used in neural networks.
+In this post, I’ll walk you through my recent exploration into how these algorithms handle tricky optimization puzzles and even step into the shoes of backpropagation (BP) for training neural networks. Spoiler alert: their performance is as diverse as their personalities!
 
-GA showed robustness for large, complex problems with many local optima, with its population diversity effectively exploring the solution space. However, it had the longest training time and required significant parameter tuning for population size and mutation rate. Notably, GA showed the lowest performance metrics for the Wine Quality dataset, making it less efficient and cost-effective in this context.
+---
 
-When optimizing neural networks, backpropagation (BP) outperformed the randomized techniques, demonstrating the highest precision and F1-score due to its direct gradient-based approach. SA and RHC had comparable accuracy and recall but lower precision and F1-scores compared to BP, while GA exhibited the poorest performance. This analysis underscores the necessity of tuning individual optimizers and comparing multiple options to identify the best performer for each specific problem. Randomized optimization algorithms are particularly effective in navigating non-differentiable, discontinuous, or irregular optimization landscapes. By carefully selecting and tuning these optimizers, one can achieve tailored solutions that best fit the unique characteristics of each problem.
+## **Meet the Contestants**
 
+### **Random Hill Climbing (RHC)**  
+RHC is the sprinter of the group—fast, agile, and straightforward. It starts with a random solution, makes small adjustments, and keeps whatever improves the score. But here’s the catch: RHC often gets stuck in local minima, like a hiker who can’t see past the nearest hill. It’s best for simple or moderately sized problems, where its speed really shines.
+
+### **Simulated Annealing (SA)**  
+SA is the adventurous one. Inspired by the cooling process in metallurgy, SA allows the occasional “bad” decision early on, which helps it escape local optima. As the “temperature” cools, it becomes more selective, honing in on better solutions. While it’s great for complex landscapes, its computational appetite and reliance on tuning can be challenging.
+
+### **Genetic Algorithms (GA)**  
+GA is the strategist, mimicking natural selection. It evolves a population of solutions over generations, blending and mutating them until it finds the best. This approach is incredibly robust for multi-modal problems but takes the longest time and demands careful tuning of population size and mutation rates.
+
+---
+
+## **The Challenges: Four Peaks, Max K-Colour, and Neural Networks**
+
+To test these algorithms, I threw two classic optimization puzzles their way—the **Four Peaks problem** and the **Max K-Colour problem**—along with a real-world challenge: training a neural network using the **Wine Quality dataset**.
+
+- **Four Peaks Problem:** A binary string puzzle rewarding balanced patterns of 0s and 1s. A test of exploration versus exploitation.
+- **Max K-Colour Problem:** A graph-coloring challenge, aiming to minimize conflicts while using a limited palette.
+- **Neural Network Training:** Using randomized optimization to tune weights instead of gradient-based backpropagation.
+
+---
+
+## **The Results Are In!**
+
+### **Four Peaks and Max K-Colour**
+- **RHC:** Quickest to finish but struggled with complex problem structures, often settling for local optima.
+- **SA:** Balanced performance, excelling in escaping local optima but slowed down by computational demands.
+- **GA:** The global optimizer—reliable but slow. Its population diversity made it robust against local minima, though it required more time and effort to fine-tune.
+
+### **Neural Network Training**
+When compared to BP:
+- **BP:** The reigning champion. Faster and more precise, its gradient-based approach outperformed the randomized trio.
+- **RHC and SA:** Comparable accuracy and recall but lagged in precision and F1-scores.
+- **GA:** The weakest performer for neural networks, with low efficiency and cost-effectiveness.
+
+---
+
+## **Lessons Learned**
+
+Here’s what my adventure with randomized optimization taught me:
+1. **One Size Doesn’t Fit All:** Each algorithm has its sweet spot. RHC is perfect for quick and simple tasks, SA thrives in rugged terrains, and GA excels in highly complex problems.
+2. **Tuning Matters:** Parameters like SA’s cooling schedule or GA’s population size can make or break an optimizer’s performance.
+3. **Blend and Match:** For real-world problems, combining traditional and randomized techniques might be the smartest approach.
+
+---
+
+## **A Fun Takeaway: No-Free-Lunch for Optimizers**
+
+The **No-Free-Lunch theorem** reminds us that no single optimizer reigns supreme across all problems. It’s a humbling reminder that every algorithm has its quirks, strengths, and limits. The key is to understand the problem you’re tackling and pick the right tool—or tools—for the job.
+
+---
+
+## **Final Thoughts**
+
+Randomized optimization isn’t just a backup for gradient-based methods—it’s a whole toolbox for tackling the kinds of messy, non-differentiable problems we often encounter in the real world. Whether you’re navigating the peaks of a binary puzzle or diving into neural network training, there’s something fascinating about letting randomness guide the way.
+
+---
 
 **Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/random_optimization.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
