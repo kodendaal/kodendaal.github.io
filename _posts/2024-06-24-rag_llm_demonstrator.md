@@ -7,9 +7,6 @@ categories:
   - website
 ---
 
-## Github Repository
-
-[Github Repository Link](https://github.com/kodendaal/rag_pdf_visualizer.git)
 
 ## Challenges of Large Language Models
 
@@ -51,3 +48,8 @@ One form of context injection is known as Retrieval-Augmented Generation (RAG). 
 - **Knowledge Management:** Enhancing database management and information retrieval.
 
 By automating mundane tasks, LLMs free up valuable time for creative and strategic activities, increasing overall productivity and efficiency.
+
+## Github Repository
+
+[Github Repository Link](https://github.com/kodendaal/rag_pdf_visualizer.git)
+
