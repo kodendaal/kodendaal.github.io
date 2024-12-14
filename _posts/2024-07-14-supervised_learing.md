@@ -7,11 +7,11 @@ categories:
   - website
 ---
 
-Supervised learning is a cornerstone of modern machine learning, helping us tackle problems ranging from classifying asteroids to evaluating wine quality. In a recent project, I explored three popular algorithms—**k-Nearest Neighbors (kNN)**, **Support Vector Classifier (SVC)**, and **Multi-Layer Perceptron (MLP)**—to understand their strengths, limitations, and real-world implications. Using the NASA Near-Earth Object and Wine Quality datasets as testing grounds, this study uncovered fascinating insights into the art of algorithm selection. Let’s break it down.
-
 <div style="text-align: center;">
   <img src="http://kodendaal.github.io/assets/supervised_learning.png" alt="Supervised Learning" style="width: 800px; height: auto;">
 </div>
+
+Supervised learning is a cornerstone of modern machine learning, helping us tackle problems ranging from classifying asteroids to evaluating wine quality. In a recent project, I explored three popular algorithms—**k-Nearest Neighbors (kNN)**, **Support Vector Classifier (SVC)**, and **Multi-Layer Perceptron (MLP)**—to understand their strengths, limitations, and real-world implications. Using the NASA Near-Earth Object and Wine Quality datasets as testing grounds, this study uncovered fascinating insights into the art of algorithm selection. Let’s break it down.
 
 ---
 
