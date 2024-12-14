@@ -7,13 +7,11 @@ categories:
   - website
 ---
 
-
-After an intense and fulfilling journey completing the Deep Learning course at Georgia Tech, I’m thrilled to share a glimpse into my group project’s research. This project tackled an exciting frontier in Generative Adversarial Networks (GANs): making their latent spaces more efficient and controllable for image manipulation. Let’s dive into what we accomplished and why it matters.
-
 <div style="text-align: center;">
   <img src="http://kodendaal.github.io/assets/dog_plushy.png" alt="GAN Manipulation" style="width: 600px; height: auto;">
 </div>
 
+After an intense and fulfilling journey completing the Deep Learning course at Georgia Tech, I’m thrilled to share a glimpse into my group project’s research. This project tackled an exciting frontier in Generative Adversarial Networks (GANs): making their latent spaces more efficient and controllable for image manipulation. Let’s dive into what we accomplished and why it matters.
 
 ## What Are GAN Latent Spaces, and Why Are They Hard to Control?
 
