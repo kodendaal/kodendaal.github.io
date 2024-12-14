@@ -21,6 +21,8 @@ Using the local sensitivity methodology, I found that not grouping items resulte
 
 This research highlights the potential for significant time and resource savings in ship design through effective weight distribution techniques and sensitivity analysis. By optimizing the weight input process, I was able to streamline the engineering process and enhance the accuracy of longitudinal strength calculations.
 
+---
+
 **Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/project_independent.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
 <div id="adobe-dc-view" style="width: 100%;"></div>
