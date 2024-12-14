@@ -7,6 +7,11 @@ categories:
   - website
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/maze_logo.png" alt="route maze" style="width: 800px; height: auto;">
+</div>
+
+
 This project explores various optimization algorithms to minimize travel time for ships in complex maritime environments. This study aimed to address the challenges of efficient voyage planning, which is crucial for cost-effective, energy-efficient, and safe operations. By comparing the **Quasi-Newton BFGS, Particle Swarm, and Simulated Annealing algorithms**, I sought to determine the best optimization tool for scenarios with limited problem information and multiple variables. 
 
 The optimization process included developing a model that interpolates waypoints on a velocity vector field to determine travel time, incorporating linear interpolation for current vectors, and applying a Piece-wise Cubic Hermite Interpolating Polynomial (PCHIP) for smooth path transitions. The model assumed constant ship speed and used a barrier method to handle path obstructions. Through sensitivity analysis and numerical noise investigation, I refined the optimization approach to ensure robustness.
