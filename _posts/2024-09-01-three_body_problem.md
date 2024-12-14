@@ -1,3 +1,12 @@
+---
+title:  "Exploration of Various Supervised Learning Algorithms"
+mathjax: true
+layout: post
+categories: 
+  = github
+  - website
+---
+
 ## Chaos in Motion: Simulating the Three-Body Problem
 
 With the release of Netflix's adaptation of "The Three-Body Problem," I found myself inspired to take on a small but chaotic project: simulating the three-body problem in classical mechanics. This famous physics puzzle has fascinated scientists for centuries, not just for its theoretical implications but for the sheer beauty of the chaos it produces.
@@ -30,7 +39,9 @@ To recreate the three-body problem, I implemented a Python simulation inspired b
 
 The gravitational force between two bodies is given by:
 
-$$ \mathbf{F} = G \frac{m_1 m_2}{r^2} \hat{r} $$
+$$
+\mathbf{F} = G \frac{m_1 m_2}{r^2} \hat{r} 
+$$
 
 where:
 - \(G\): Gravitational constant
@@ -58,11 +69,11 @@ v1, v2, v3 = [0.1, 0.2], [-0.2, -0.1], [0.1, -0.1]  # Initial velocities
 ```
 
 #### 3. **Visualization**
-I used `matplotlib` to plot the trajectories of the three bodies. By recording their positions at each time step, I could create dynamic visualizations of their chaotic dance. Here’s the final frame from one of my simulations:
+I used `matplotlib` to plot the trajectories of the three bodies. By recording their positions at each time step, I could create dynamic visualizations of their chaotic dance. Here’s a couple mesmerizing motion of the bodies over time. 
 
 <img src="http://kodendaal.github.io/assets/three_body_problem.gif" alt="Three Body Problem Animation" style="width:100%;max-width:500px;">
 
-I also generated animated GIFs to capture the mesmerizing motion of the bodies over time. You’ll find these embedded throughout the post.
+I also generated animated GIFs to capture 
 
 ---
 
