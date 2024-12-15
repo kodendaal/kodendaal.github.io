@@ -46,10 +46,10 @@ $$
 where:
 - $$G$$: Gravitational constant
 - $$m_1, m_2$$: Masses of the bodies
-- $r$: Distance between them
-- $\hat{r}$: Unit vector pointing from one body to the other
+- $$r$$: Distance between them
+- $$\hat{r}$$: Unit vector pointing from one body to the other
 
-Using Newton’s second law, $\mathbf{F} = m \mathbf{a}$, we can compute the acceleration $\mathbf{a}$ for each body. Combining these forces across all pairs of bodies allows us to determine their motion over time.
+Using Newton’s second law, $$\mathbf{F} = m \mathbf{a}$$, we can compute the acceleration $$\mathbf{a}$$ for each body. Combining these forces across all pairs of bodies allows us to determine their motion over time.
 
 ---
 
