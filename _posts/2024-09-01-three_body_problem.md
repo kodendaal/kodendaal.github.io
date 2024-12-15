@@ -76,9 +76,6 @@ I used `matplotlib` to plot the trajectories of the three bodies. By recording t
    <img src="http://kodendaal.github.io/assets/three_body_problem_1.gif" alt="Three Body Problem Animation" style="width:100%">
 </div>
 
-
-I also generated animated GIFs to capture 
-
 ---
 
 ### Observing the Chaos
