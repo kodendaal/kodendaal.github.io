@@ -1,11 +1,15 @@
 ---
-title:  "COMING SOON! Interactive Sailing Game "
+title:  "Interactive Sailing Game (COMING SOON!) "
 mathjax: true
 layout: post
 categories: 
   = github
   - website
 ---
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/sailing_game_logo1.png" alt="Sailing Game" style="width: 800px; height: auto;">
+</div>
 
 ## COMING SOON
 
