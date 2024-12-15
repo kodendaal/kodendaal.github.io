@@ -44,8 +44,8 @@ $$
 $$
 
 where:
-- $G$: Gravitational constant
-- $m_1, m_2$: Masses of the bodies
+- $$G$$: Gravitational constant
+- $$m_1, m_2$$: Masses of the bodies
 - $r$: Distance between them
 - $\hat{r}$: Unit vector pointing from one body to the other
 
