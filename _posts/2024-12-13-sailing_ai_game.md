@@ -1,5 +1,5 @@
 ---
-title:  "Interactive Sailing Game (COMING SOON!) "
+title:  "Coming Soon! Interactive Sailing Game"
 mathjax: true
 layout: post
 categories: 
