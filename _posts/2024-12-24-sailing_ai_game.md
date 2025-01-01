@@ -27,7 +27,7 @@ The game’s premise is simple yet engaging:
 The human player controls their boat’s rudder and sails, navigating around waypoints while managing the effects of wind and physics. Meanwhile, the AI agent uses its training to adjust its heading and sails for maximum efficiency.
 
 <div style="text-align: center; margin: 20px;">
-  <video width="640" height="360" controls>
+  <video width="800" height="400" controls>
     <source src="http://kodendaal.github.io/assets/sailing_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
