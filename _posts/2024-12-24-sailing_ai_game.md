@@ -26,13 +26,6 @@ The game’s premise is simple yet engaging:
 
 The human player controls their boat’s rudder and sails, navigating around waypoints while managing the effects of wind and physics. Meanwhile, the AI agent uses its training to adjust its heading and sails for maximum efficiency.
 
-<div style="text-align: center; margin: 20px;">
-  <video width="800" height="400" controls>
-    <source src="http://kodendaal.github.io/assets/sailing_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
-
 ---
 
 ## The Journey: From Concept to Code
@@ -43,6 +36,13 @@ The foundation of the game lies in its mechanics. Sailing involves more than jus
 - **Physics Modeling**: Simulating the effects of wind, sail angles, and boat turning.
 - **Waypoint Navigation**: Placing waypoints on the course that both the player and AI must navigate around.
 - **Basic Controls**: Allowing the human player to adjust the rudder and sails via keyboard inputs.
+
+<div style="text-align: center; margin: 20px;">
+  <video width="800" height="400" controls>
+    <source src="http://kodendaal.github.io/assets/sailing_video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ### Step 2: Introducing the AI
 Building the AI opponent was a fascinating challenge. Using Python’s **Stable Baselines3** library, I:
