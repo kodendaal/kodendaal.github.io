@@ -1,5 +1,5 @@
 ---
-title:  "Sailing into the Unknown: Building a Fun Sailing Regatta Game with AI"
+title:  "Sailing into the Unknown: Building a Regatta Game with AI"
 mathjax: true
 layout: post
 categories: 
