@@ -58,6 +58,11 @@ Once the AI was trained, I added a **racing mode** where players could compete a
 ### Balancing Realism and Playability
 Sailing simulations can become overly complex. I simplified the physics enough to ensure the game was intuitive but still required skill and strategy. For example, instead of modeling every aspect of sail aerodynamics, I used a simplified polar diagram to calculate boat speed based on wind angle.
 
+
+![Sailboat polar plot](http://kodendaal.github.io/assets/polarplot.png)
+
+
+
 ### Shaping the AI’s Learning
 Early training results showed the AI struggling to stay on course. Adjustments to the reward function—such as incremental rewards for reducing distance to waypoints—helped the AI improve. Randomizing wind directions and starting positions during training made the AI more robust.
 
