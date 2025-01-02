@@ -1,5 +1,5 @@
 ---
-title:  "Numerical Assessment and Approximation of Planing Hull Ships"
+title:  "Riding the Waves: Investigating Planing Vessel Hydrodynamics with Modern Tools"
 mathjax: true
 layout: post
 categories: 
@@ -11,14 +11,75 @@ categories:
   <img src="http://kodendaal.github.io/assets/wedges_logo1.png" alt="Wedges CFD" style="width: 800px; height: auto;">
 </div>
 
+Ever wonder what keeps a high-speed planing vessel gliding smoothly across the water? The answer lies in **hydrodynamics**, a fascinating field that blends physics, fluid mechanics, and engineering. My latest project explored this by comparing traditional and modern methods to analyze the behavior of planing vessels.
 
-In this project, I investigated the hydrodynamic characteristics of planing vessels using various computational methods. Traditionally, these characteristics were studied through towing tank experiments, but with advancements in technology, Computational Fluid Dynamics (CFD) has become increasingly relevant. This study compared the results of hydrodynamic calculations using CFD, Savitsky’s Method, and Von Karman’s Method to validate and understand the differences between these approaches.
+---
 
-The project began by determining the key parameters of the vessel geometry using Savitsky’s hydrodynamic design, which provided a close approximation of planing craft. These parameters included trim angle, draft, wetted keel length, and inclined dead rise angle, which were crucial for the study. A significant part of the project involved generating a mesh for CFD analysis, balancing computational efficiency and accuracy. Different mesh sizes were tested to ensure the results were robust and reliable.
+### The Challenge: Traditional vs. Modern Techniques
 
-The CFD analysis required careful selection of parameters, such as solver type, artificial diffusion, and time-stepping methods. Through extensive trial and error, I refined these parameters to achieve stable and accurate simulations. The visualization of results highlighted the fluid dynamics around the planing hull, including pressure distributions and velocity fields, providing insights into the performance and behavior of the vessel under different conditions.
+Historically, towing tank experiments were the go-to for understanding planing vessel hydrodynamics. However, with advancements in **Computational Fluid Dynamics (CFD)**, we now have tools that promise detailed and flexible insights. This project aimed to compare:
+1. **Savitsky’s Method**: A classic analytical approach for planing hulls.
+2. **Von Karman’s Method**: A momentum-based analytical technique.
+3. **CFD Simulations**: The modern, computational powerhouse.
 
-Key learnings from this project include the importance of choosing the right computational methods and parameters for accurate hydrodynamic analysis. The comparison of CFD with traditional analytical methods demonstrated the advantages and limitations of each approach. This study underscores the potential of CFD in modern ship design, offering a more flexible and detailed analysis compared to traditional methods.
+---
+
+### The Approach: From Geometry to Simulation
+
+#### Step 1: Define the Geometry
+Using **Savitsky’s Method**, I calculated key parameters like trim angle, draft, and wetted keel length. These parameters provided a solid foundation for modeling and ensured consistency across methods.
+
+#### Step 2: Mesh Generation for CFD
+Creating a reliable CFD mesh is an art and a science:
+- **Balancing Accuracy and Efficiency**: Six mesh sizes were tested, ranging from 3,649 to over 100,000 elements.
+- **Refining Key Areas**: Extra focus on the wedge region ensured precise force calculations.
+
+#### Step 3: Running the CFD Simulations
+CFD involves numerous parameters, including solver type, time-stepping, and diffusion settings. Through **trial and error**, I fine-tuned these parameters to achieve stable and realistic results. The simulations revealed:
+- Pressure distributions across the hull.
+- Velocity fields highlighting fluid behavior.
+- Detailed force calculations over time.
+
+---
+
+### The Results: Comparing Methods
+
+1. **CFD**:
+   - Provided the most detailed insights, capturing dynamic fluid interactions like vortex formation and pressure redistribution.
+   - Required significant computational resources but delivered highly accurate results.
+
+2. **Savitsky’s Method**:
+   - Quick and computationally light.
+   - Useful for approximations but lacked the depth of CFD.
+
+3. **Von Karman’s Method**:
+   - Overestimated forces due to simplified assumptions.
+   - Adjustments for fluid acceleration improved results but still lagged behind CFD.
+
+---
+
+### Key Takeaways: Lessons from the Water
+
+- **Accuracy vs. Efficiency**: While analytical methods like Savitsky’s are great for initial approximations, CFD is unparalleled for detailed analysis.
+- **Parameter Selection Matters**: Fine-tuning CFD inputs is critical for realistic simulations.
+- **Mesh Refinement is Crucial**: The accuracy of CFD results depends heavily on mesh quality, especially near high-impact areas.
+
+---
+
+### Why It Matters: The Future of Ship Design
+
+This project highlights the growing importance of CFD in modern ship design. By offering detailed insights into fluid dynamics, CFD enables:
+- **Better Performance**: Optimizing hull designs for speed and efficiency.
+- **Cost Savings**: Reducing the need for physical experiments.
+- **Flexibility**: Adapting to complex, real-world scenarios.
+
+---
+
+### Charting New Waters
+
+Looking ahead, the combination of traditional methods and CFD holds immense potential. Analytical techniques provide a quick starting point, while CFD adds depth and precision. Together, they pave the way for innovative, efficient, and sustainable ship designs.
+
+Ready to ride the waves of hydrodynamic innovation? Let’s make a splash! 🌊✨
 
 ---
 
