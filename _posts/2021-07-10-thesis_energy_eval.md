@@ -1,5 +1,5 @@
 ---
-title:  "Enhancing Energy Consumption Predictions for Ships"
+title:  "Bridging Prediction Gaps in Yacht Energy Efficiency: A Grey-Box Approach"
 mathjax: true
 layout: post
 categories: 
@@ -11,15 +11,49 @@ categories:
   <img src="http://kodendaal.github.io/assets/ai_thesis_logo.png" alt="AI Thesis" style="width: 800px; height: auto;">
 </div>
 
-**This work was awarded the Maritime Designer of the Year Award 2022 in the Netherlands, recognizing its significant contribution to the field.**
+In the quest for sustainable yachting, accurately predicting energy consumption has been a persistent challenge. This is where my graduate project, awarded the **Maritime Designer of the Year 2022**, made a breakthrough by introducing a novel methodology to bridge the gap between predicted and actual energy usage. Leveraging **Grey-Box Modelling (GBM)**, my approach combined physics-based White-Box Models (WBM) and data-driven Black-Box Models (BBM) to deliver unprecedented accuracy and insights.
 
-In my graduate project I developed an innovative approach to accurately predict total dynamic energy consumption for yachts using real operational voyage data. This method aimed to bridge the gap between predicted and actual energy consumption, a significant challenge in the yachting industry driven by the need to reduce environmental impact. Utilizing Grey-Box Modelling (GBM), which combines physics-based White-Box Models (WBM) and data-driven Black-Box Models (BBM), I enhanced both accuracy and extrapolation capacity. By analyzing ten months of continuous monitoring data, hindcasted weather, and voyage information from a Feadship fleet yacht, I achieved predictions for propulsion and auxiliary estimates within 3% and 7% error of operational conditions, respectively.
+---
 
-The process involved developing a sequential modelling methodology that integrated multiple WBMs for different power components and an ANN-based BBM to scale the outputs to fit operational data. Detailed comparisons between WBM, BBM, and GBM categories using external datasets evaluated extrapolation potential, showing GBM improvements over BBM, with limitations related to the strength of dynamic WBM input-output correlations. This project highlighted the significant improvements in accuracy and interpretability offered by combining WBM and BBM. High-quality and relevant input data proved crucial for the success of GBM in predicting energy consumption accurately. Moreover, the modular nature of the GBM allowed for the incorporation of various data types, enhancing its adaptability for different maritime applications.
+#### Key Highlights of the Project
 
-Ultimately, this project demonstrated the potential of GBM to provide more reliable early-stage energy consumption predictions, helping the yachting industry move towards more sustainable designs. The methodology not only improved prediction accuracy but also offered insights into the dynamic interactions affecting energy consumption, paving the way for future advancements in sustainable yacht design.
+1. **Real Operational Data Utilization**: 
+   Using 10 months of voyage data from a Feadship yacht, coupled with weather and voyage details, the model achieved prediction errors of just **3% for propulsion power** and **7% for auxiliary power** under real-world conditions.
+
+2. **Innovative Methodology**:
+   - Developed a **sequential modelling process** integrating WBMs for different power components.
+   - Utilized Artificial Neural Networks (ANN) to scale predictions for operational conditions.
+   - Created modular frameworks adaptable to various maritime applications.
+
+3. **Advantages of Grey-Box Modelling**:
+   - **Improved Accuracy**: Outperformed both standalone WBMs and BBMs in prediction reliability.
+   - **Better Extrapolation**: Retained critical physical dynamics, enhancing performance in unseen scenarios.
+   - **Adaptability**: Modular design accommodated multiple data types and operational profiles.
+
+---
+
+#### Why This Matters
+
+The maritime industry's push toward sustainability demands tools that align design predictions with operational realities. My research demonstrated that combining physics-based insights with data-driven models not only boosts prediction accuracy but also provides a deeper understanding of energy consumption patterns.
+
+---
+
+#### Looking Ahead
+
+This project paves the way for:
+- **Sustainable Yacht Design**: Providing designers with reliable early-stage tools to optimize energy usage.
+- **Real-Time Optimization**: Adapting the methodology for operational decision-making.
+- **Scalable Applications**: Expanding to other vessels, ensuring broader industry adoption.
+
+---
+
+By bridging the gap between prediction and reality, this Grey-Box approach is a step toward greener, more efficient yachting—a critical need in our fight against climate change.
+
+---
 
 # Links to open-access publications
+
+**This work was awarded the Maritime Designer of the Year Award 2022 in the Netherlands, recognizing its significant contribution to the field.**
 
 **[Peer-Reviewd Journal Link](https://www.sciencedirect.com/science/article/pii/S2092678222000504?via%3Dihub)**
 
