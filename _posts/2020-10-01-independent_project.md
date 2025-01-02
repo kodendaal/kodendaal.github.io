@@ -1,5 +1,5 @@
 ---
-title:  "Enhancing Ship Strength and Efficiency Through a Sensitivity Analysis"
+title:  "Simplifying Ship Design: A Fun Dive into Hull Strength Analysis"
 mathjax: true
 layout: post
 categories: 
@@ -11,15 +11,52 @@ categories:
   <img src="http://kodendaal.github.io/assets/ship_long_logo.png" alt="Ship Longitudinal Strength" style="width: 800px; height: auto;">
 </div>
 
-In this independent research project, I explored a critical aspect of ship design: the longitudinal strength of hulls, which is essential for preventing catastrophic failures like fracturing or sinking. The challenge I faced was the complex and time-consuming process of calculating this strength, which involves meticulously inputting up to 5000 individual weight items to model the vessel’s weight distribution. My goal was to streamline this process by applying a detailed sensitivity analysis to evaluate different weight distribution techniques and their impact on longitudinal strength parameters.
+Ever wonder what keeps a massive ship from snapping in two while it cruises through the ocean? Turns out, it’s all about **longitudinal strength**—the backbone of a ship’s structural integrity. In my independent research project, I set out to tackle one of the toughest challenges in ship design: streamlining the process of calculating this critical strength without sacrificing accuracy. And yes, it was as exciting as it sounds!
 
-I focused on three weight distribution techniques: approximate parabolic, point-wise grouping, and trapezoidal direct. Through a local one-at-a-time sensitivity analysis, I assessed how each method affects still water shear force and bending moment, adhering to a general accuracy requirement of ±10%. My initial findings showed that the parabolic approximation method did not meet the accuracy requirements. Consequently, I expanded the analysis to a large-scale case study with Damen Yachting, using real data to compare the techniques.
+---
 
-The results revealed that both the grouping and trapezoidal methods performed well in handling longitudinal strength calculations. The trapezoidal method offered slightly better accuracy (0.22% and 0.35% improvements in shear and bending moment, respectively). Although the grouping method had lower accuracy (0.38% and 3.49% deviations), it was advantageous for academic purposes due to its superior weight input control. Notably, when distributed loads were simplified to individual point loads, the results deviated significantly from the baseline metrics.
+### The Problem: Weighty Calculations
 
-Using the local sensitivity methodology, I found that not grouping items resulted in a significant reduction in input time by 29.88% compared to full input scenarios. Additionally, two vessel verification studies confirmed further time reductions of 24.97% and 27.00%, with the accuracy of the elbow point metric varying only between 0.3% and 2.3% from fully detailed cases. Overall, my work demonstrated time savings of 30% to 25%, showcasing a substantial improvement in efficiency for ship hull design.
+Calculating longitudinal strength isn’t a walk in the park. Imagine painstakingly inputting **up to 5000 individual weight items** just to figure out a ship’s weight distribution. It’s a tedious, time-consuming task, but absolutely essential for ensuring the ship won’t fracture or sink. My goal? To make this process faster and smarter without compromising accuracy.
 
-This research highlights the potential for significant time and resource savings in ship design through effective weight distribution techniques and sensitivity analysis. By optimizing the weight input process, I was able to streamline the engineering process and enhance the accuracy of longitudinal strength calculations.
+---
+
+### The Approach: Testing Weight Distribution Techniques
+
+I focused on three weight distribution techniques and tested their impact on **still water shear force** and **bending moment**—two key parameters in hull strength. Here’s what I explored:
+1. **Parabolic Approximation**: Quick but didn’t pass the accuracy test.
+2. **Point-Wise Grouping**: A great choice for academics with better weight input control but slightly lower accuracy.
+3. **Trapezoidal Direct Method**: The rockstar of the study with the best accuracy (0.22% and 0.35% improvements for shear and bending moments, respectively).
+
+Using a **local one-at-a-time sensitivity analysis**, I dived deep into how each method performed under different scenarios.
+
+---
+
+### The Big Find: Faster and Smarter Design
+
+Here’s where the magic happened. By simplifying weight distribution:
+- I cut **input time by nearly 30%!**
+- Two real-world vessel studies showed additional **time savings of 24.97% and 27%**.
+- Accuracy? The differences from fully detailed cases were minor, between **0.3% and 2.3%**, well within acceptable limits.
+
+What does this mean? You don’t need to model every tiny detail to get reliable results. Smarter grouping and streamlined methods can save both time and resources.
+
+---
+
+### Why It Matters
+
+This research proves that efficient weight distribution techniques can revolutionize ship design:
+- **Faster Calculations**: Time saved can be redirected to other critical design tasks.
+- **Enhanced Accuracy**: Even simplified methods deliver reliable results.
+- **Resource Savings**: Less time and effort mean lower costs and greater efficiency.
+
+---
+
+### A Look Ahead
+
+With these findings, shipbuilders and designers have the tools to make the engineering process smoother, faster, and just as reliable. Who knows? The next big yacht might just owe its sleek design to a more efficient weight input process!
+
+In the end, it’s all about making ship design less about the grunt work and more about innovation—and that’s something to celebrate. 🚢✨
 
 ---
 
