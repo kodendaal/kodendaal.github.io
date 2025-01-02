@@ -70,15 +70,15 @@ Sailing simulations can become overly complex. I simplified the physics enough t
 </div>
 
 
-### Shaping the AI’s Learning
+### Shaping the AI’s Learning (WIP)
 Early training results showed the AI struggling to stay on course. Adjustments to the reward function—such as incremental rewards for reducing distance to waypoints—helped the AI improve. Randomizing wind directions and starting positions during training made the AI more robust.
 
-### Integrating the Human Experience
+### Integrating the Human Experience (WIP) 
 Adding a human-playable mode meant balancing the controls for accessibility and precision. It was important to give players tools like wind direction indicators and clear feedback on sail trim efficiency.
 
 ---
 
-## What Makes It Fun?
+## What Makes It Fun? (WIP)
 
 1. **Dynamic Wind Mechanics**: Players must constantly adjust their strategy based on wind direction and strength.
 2. **Challenging AI**: Competing against an AI that learns and adapts offers a unique and unpredictable challenge.
