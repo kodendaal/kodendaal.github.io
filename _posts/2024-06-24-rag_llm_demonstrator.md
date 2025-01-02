@@ -18,6 +18,8 @@ Large Language Models (LLMs) like ChatGPT have significantly advanced natural la
 - **AI Safety and Privacy:** Rapid advancements in LLMs bring safety concerns, requiring adherence to ethical guidelines to prevent harmful or biased content.
 - **Compute, Cost, and Time-Intensive Workloads:** LLMs demand substantial computational resources for training, which can be costly and time-consuming.
 
+---
+
 ## General Cost of Building an LLM
 Training LLMs is resource-intensive, illustrated by the GPU hours required:
 - **Llama 2 (7b):** ~180,000 GPU hours
@@ -29,10 +31,14 @@ Training LLMs is resource-intensive, illustrated by the GPU hours required:
 
 To provide context, ChatGPT-3.5 has 175 billion parameters, and ChatGPT-4.0 is estimated to have 1.76 trillion parameters.
 
+---
+
 ## Proposed Solutions
 Given the high costs and complexity of building LLMs from scratch, leveraging existing models is a more feasible approach. This can be achieved through:
 - **Model Fine-Tuning:** Customizing a pre-trained model to better suit specific tasks or datasets.
 - **Context Injection:** Enhancing the model's performance by providing it with relevant context during operation.
+
+---
 
 ## Retrieval-Augmented Generation (RAG)
 One form of context injection is known as Retrieval-Augmented Generation (RAG). RAG combines LLMs with a retrieval system to improve performance and address key challenges:
@@ -43,6 +49,7 @@ One form of context injection is known as Retrieval-Augmented Generation (RAG). 
 
 ![rag_framework](http://kodendaal.github.io/assets/llm_workflow.png)
 
+---
 
 ## Applications
 - **Knowledge Sharing:** Using LLMs to disseminate information through journals, leaflets, and websites.
@@ -51,6 +58,8 @@ One form of context injection is known as Retrieval-Augmented Generation (RAG). 
 - **Knowledge Management:** Enhancing database management and information retrieval.
 
 By automating mundane tasks, LLMs free up valuable time for creative and strategic activities, increasing overall productivity and efficiency.
+
+---
 
 ## Github Repository
 
