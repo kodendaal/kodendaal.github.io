@@ -1,5 +1,5 @@
 ---
-title:  "A Hydrodynamic Numerical Assessment of Vessel Performance"
+title:  "How to Design a Hull: Analyzing Ship Hydrodynamics with Boundary Element Methods"
 mathjax: true
 layout: post
 categories: 
@@ -11,16 +11,73 @@ categories:
   <img src="http://kodendaal.github.io/assets/hull_opti.png" alt="Hull Optimization" style="width: 800px; height: auto;">
 </div>
 
+What makes a ship cut through the water gracefully while minimizing resistance? It’s all about **hydrodynamics**, and my recent project dove into this fascinating area using modern computational techniques. By implementing a **Boundary Element Method (BEM)**, I explored wave patterns, pressure distributions, and ship motions, all on a custom-designed hull.
 
-Numerical methods for analyzing ship hydrodynamics have become increasingly important in modern naval architecture. This study implements a Boundary Element Method (BEM) to examine hydrodynamic phenomena on a custom hull geometry. The analysis focuses on wave patterns, pressures, and velocity vectors, as well as ship motions through diffraction techniques.
+---
 
-The investigation begins with an overview of potential flow theory and boundary conditions essential for BEM analysis. A custom hull geometry inspired by traditional sailing yachts was created using Bi-cubic Bezier surfaces. The model was carefully designed to meet specific constraints required by the DELKELV program, including limitations on the Froude number, hull shape, and panel count.
+### The Goal: Simplicity Meets Precision
 
-Pre-processing steps involved determining appropriate grid sizes, panel numbers, and spacing techniques. The study used cosine spacing on the wetted surface and uniform spacing on the free surface to capture relevant physics accurately. The analysis produced a clear Kelvin wave pattern with two wavelengths along the vessel, matching theoretical predictions for the given Froude number of 0.28.
+The objective was to investigate hydrodynamic phenomena using BEM—an efficient computational approach that simplifies complex fluid dynamics. I analyzed:
+1. **Wave Patterns**: From bow to stern, understanding the forces acting on the ship.
+2. **Pressure Distributions**: Identifying high-pressure zones for hull optimization.
+3. **Ship Motions**: Exploring roll, pitch, and heave using Response Amplitude Operators (RAOs).
 
-Results showed maximum wave heights of about 0.06m at the bow and stern, with the stern wave possibly overestimated due to the potential flow model's limitations. Pressure distribution analysis revealed high-pressure regions corresponding to wave crests and low-pressure areas aligned with troughs. These pressure gradients indicated potential areas for hull geometry optimization to improve flow uniformity and reduce resistance. The study also examined ship motions using Response Amplitude Operators (RAOs) for six degrees of freedom. Particular attention was given to roll, pitch, and heave motions. The analysis highlighted some limitations of potential flow methods, such as the lack of viscous damping in roll motions leading to unrealistically high peaks in the RAO.
+---
 
-While BEM techniques offer fast computational times compared to viscous solvers, the researchers emphasize the importance of understanding non-viscous flow effects to interpret results accurately. The study concludes that potential flow codes can be powerful tools in ship design when used judiciously, with careful consideration of their limitations and thoughtful interpretation of results.
+### The Process: Breaking Down the Waves
+
+#### 1. **Custom Hull Design**
+Inspired by traditional sailing yachts, I created a custom hull using **Bi-cubic Bezier surfaces**. This technique allowed smooth surface control while meeting specific constraints, such as Froude number limits and a maximum of 500 panels on the wetted surface.
+
+#### 2. **Pre-Processing for BEM**
+To prepare the model:
+- **Cosine Spacing**: Applied to the wetted surface for finer detail near the bow and stern.
+- **Uniform Spacing**: Used on the free surface to capture wave behavior accurately.
+- **Grid Optimization**: Ensured the model adhered to theoretical expectations, such as the Kelvin wave angle (~19.5°).
+
+#### 3. **Running the Analysis**
+Using the **DELKELV** program, I generated a clear Kelvin wave pattern with two wavelengths along the ship at a Froude number of 0.28. Pressure and velocity analyses offered insights into hull efficiency, highlighting areas with high resistance.
+
+---
+
+### The Results: Riding the Wave of Discovery
+
+1. **Wave Patterns**:
+   - Maximum wave heights of **0.06m** were observed at the bow and stern.
+   - The stern wave was likely overestimated due to the non-viscous nature of potential flow models.
+
+2. **Pressure Distributions**:
+   - High-pressure zones aligned with wave crests.
+   - Low-pressure regions indicated areas for potential hull optimization to reduce resistance.
+
+3. **Ship Motions**:
+   - **Roll**: Unrealistically high RAO peaks due to the absence of viscous damping.
+   - **Heave and Pitch**: Matched expected patterns but revealed areas for improvement in hull stability.
+
+---
+
+### Key Takeaways: Insights into Hydrodynamic Optimization
+
+- **Efficiency vs. Accuracy**: BEM offers quick results but requires thoughtful interpretation due to non-viscous flow assumptions.
+- **Grid Design is Critical**: Fine-tuning grid parameters ensures accurate wave and pressure modeling.
+- **Understand the Limits**: Knowing the restrictions of potential flow methods, such as the lack of boundary layer effects, is essential for accurate conclusions.
+
+---
+
+### Why It Matters: A Step Forward in Ship Design
+
+This study demonstrates how computational tools like BEM can provide valuable insights into ship hydrodynamics. By combining fast computational times with careful analysis, we can:
+- Optimize hull designs for lower resistance and better fuel efficiency.
+- Identify areas for structural improvements.
+- Accelerate the design process without relying solely on costly experiments.
+
+---
+
+### Sailing Ahead: Bridging Traditional and Modern Techniques
+
+While BEM is a powerful tool, integrating viscous solvers for real-world applications could unlock even greater potential. For now, understanding and leveraging the strengths of potential flow codes gives naval architects a practical edge in designing the ships of tomorrow.
+
+Ready to set sail on a wave of innovation? Let’s navigate the future of naval design together! 🌊⚓️
 
 ---
 
