@@ -1,5 +1,5 @@
 ---
-title:  "How to Design a Hull: Analyzing Ship Hydrodynamics with Boundary Element Methods"
+title:  "How to Design a Hull: Analyzing Ship Hydrodynamics with BEM"
 mathjax: true
 layout: post
 categories: 
