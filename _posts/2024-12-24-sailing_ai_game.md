@@ -39,7 +39,7 @@ The foundation of the game lies in its mechanics. Sailing involves more than jus
 
 <div style="text-align: center; margin: 20px;">
   <video controls>
-    <source src="http://kodendaal.github.io/assets/sailing_video.mp4" type="video/mp4">
+    <source src="http://kodendaal.github.io/assets/sailing_video_v1.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
