@@ -38,7 +38,7 @@ The foundation of the game lies in its mechanics. Sailing involves more than jus
 - **Basic Controls**: Allowing the human player to adjust the rudder and sails via keyboard inputs.
 
 <div style="text-align: center; margin: 20px;">
-  <video width="800" height="400" controls>
+  <video controls>
     <source src="http://kodendaal.github.io/assets/sailing_video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
