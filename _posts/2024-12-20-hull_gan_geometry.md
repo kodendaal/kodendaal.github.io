@@ -10,7 +10,7 @@ This blog explores a groundbreaking project conducted at **MARIN** in collaborat
 
 ## Understanding the Challenge: Hull Design
 
-Designing a ship hull requires balancing **aerodynamics, hydrodynamics, and manufacturability**. Traditional methods often involve:
+Designing a ship hull requires balancing **hydrodynamics, and manufacturability**. Traditional methods often involve:
 - Iterative adjustments by designers.
 - Computationally expensive simulations.
 - Limited exploration of diverse design possibilities.
