@@ -31,6 +31,10 @@ We combined three powerful tools to address these challenges:
 
 By integrating PCA into the DragGAN framework, we reduced the dimensionality of latent spaces, making image manipulation faster and more efficient. This streamlined process retained high visual quality and even improved metrics like the Structural Similarity Index Measure (SSIM).
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/dog_motion_gif" alt="dog motion" style="width: 800px; height: auto;">
+</div>
+
 ---
 
 ## Key Findings: What We Learned from the AFHQ Dataset
