@@ -54,7 +54,7 @@ Through iterative adversarial training, the generator learns to create increasin
   - **Space-Filling Loss** to ensure diversity:
     
     $$
-    S = \sum_{i=1}^{m-1} \sum_{j=i+1}^m \frac{1}{\|\mathbf{x}_j - \mathbf{x}_i\|^2}
+    L_{\text{space-fill}} = \sum_{i=1}^{m-1} \sum_{j=i+1}^m \frac{1}{\|\mathbf{x}_j - \mathbf{x}_i\|^2}
     $$
     
     where $$(\mathbf{x}_i, \mathbf{x}_j)$$ are generated designs, and $$( m )$$ is the total number of designs.
@@ -67,6 +67,7 @@ Through iterative adversarial training, the generator learns to create increasin
     where $$( \Delta x_i )$$ is the Laplacian for point $$( i )$$.
 
 - **Post-Processing**: Applied Gaussian smoothing and symmetry enforcement for refinement:
+- 
     $$
     x_{\text{smoothed}} = x \ast G(\mu, \sigma^2)
     $$
@@ -89,14 +90,17 @@ Our dataset included **12,000 geometries** from six vessel classes (e.g., sailin
 </div>
 
 ### GAN Architecture
-- **Generator**: Mapped latent vectors (\( z \sim \mathcal{N}(0, I) \)) to 3D hull geometries using transposed convolutional layers:
-    \[
+- **Generator**: Mapped latent vectors $$( z \sim \mathcal{N}(0, I) )$$ to 3D hull geometries using transposed convolutional layers:
+
+    $$
     h_{l+1} = \text{ReLU}(\text{BatchNorm}(W_l^T h_l + b_l))
-    \]
+    $$
+  
 - **Discriminator**: Processed geometries to classify them as real or fake using convolutional layers:
-    \[
+
+    $$
     h_{l+1} = \text{LeakyReLU}(\text{BatchNorm}(W_l h_l + b_l))
-    \]
+    $$
 
 ### Results
 The DCGAN successfully generated realistic and diverse hull designs. However, challenges like irregularities in the **forebody** and dataset limitations highlighted areas for improvement.
