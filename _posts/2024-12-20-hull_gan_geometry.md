@@ -54,6 +54,10 @@ Through iterative adversarial training, the generator learns to create increasin
     \]
     where \( G(\mu, \sigma^2) \) is a Gaussian kernel.
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/proposed_gan_pipeline.png" alt="gan pipeline" style="width: 800px; height: auto;">
+</div>
+
 ---
 
 ## From Concept to Results: The Journey
@@ -61,7 +65,9 @@ Through iterative adversarial training, the generator learns to create increasin
 ### Data Preparation
 Our dataset included **12,000 geometries** from six vessel classes (e.g., sailing yachts, motor yachts). Each geometry was encoded using a **Rhino Grasshopper pipeline**, enabling automated and scalable processing.
 
-![Placeholder for a visual showing the dataset classes and encoding pipeline]
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/various_vessel_classes.png" alt="Vessel Classes" style="width: 800px; height: auto;">
+</div>
 
 ### GAN Architecture
 - **Generator**: Mapped latent vectors (\( z \sim \mathcal{N}(0, I) \)) to 3D hull geometries using transposed convolutional layers:
@@ -76,7 +82,9 @@ Our dataset included **12,000 geometries** from six vessel classes (e.g., sailin
 ### Results
 The DCGAN successfully generated realistic and diverse hull designs. However, challenges like irregularities in the **forebody** and dataset limitations highlighted areas for improvement.
 
-![Placeholder for generated hull geometries (raw and smoothed)]
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/hull_gan_geometries.gif" alt="Hull GAN Geometries" style="width: 800px; height: auto;">
+</div>
 
 ---
 
@@ -103,9 +111,3 @@ While the current DCGAN model demonstrated promise, there’s room for advanceme
 The fusion of GANs and engineering is more than a technical milestone—it's a paradigm shift. At MARIN, in collaboration with the University of Strathclyde, we've laid the groundwork for AI-driven ship design. As technology evolves, so does our capacity to innovate, optimize, and redefine what’s possible in engineering.
 
 *Stay tuned as we continue to explore the frontiers of AI and its transformative potential for the maritime industry and beyond.*
-
-![Placeholder for closing illustration of futuristic ship designs]
-
----
-
-*What are your thoughts on AI in engineering? Share your ideas and join the conversation below!*
