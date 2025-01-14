@@ -1,5 +1,5 @@
 ---
-title:  "DragGANSpace: A Deep Dive into Controlling GANs"
+title:  "Revolutionizing Hull Design with GANs: Exploring Engineering's Future"
 mathjax: true
 layout: post
 categories: 
@@ -7,8 +7,11 @@ categories:
   - website
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/encoding_pipeline.png" alt="gan pipeline" style="width: 800px; height: auto;">
+</div>
 
-# Revolutionizing Hull Design with GANs: Exploring Engineering's Future
+
 
 ## Introduction
 
