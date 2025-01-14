@@ -131,6 +131,6 @@ While the current model showed significant promise, there’s still room to expa
 
 For those eager to dive deeper into the technical side, we've made the training script for a **GAN model** open-source. This script includes the core DCGAN architecture, loss functions, and training workflows used in this project. While the dataset remains proprietary (For now...), the script provides a robust starting point for exploring similar applications in your domain.
 
-[Access the training script on GitHub](#) *(Replace with actual link)*
+[Access the training script on GitHub](to be added) 
 
 As technology evolves, so does our capacity to innovate, optimize, and redefine what's possible in engineering. Join us on this journey to unlock new frontiers in design and automation!
