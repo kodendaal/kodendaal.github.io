@@ -8,7 +8,7 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/ship_gan_cover" alt="gan cover" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/ship_gan_cover.png" alt="gan cover" style="width: 800px; height: auto;">
 </div>
 
 
