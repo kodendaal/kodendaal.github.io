@@ -1,3 +1,13 @@
+---
+title:  "DragGANSpace: A Deep Dive into Controlling GANs"
+mathjax: true
+layout: post
+categories: 
+  = github
+  - website
+---
+
+
 # Revolutionizing Hull Design with GANs: Exploring Engineering's Future
 
 ## Introduction
