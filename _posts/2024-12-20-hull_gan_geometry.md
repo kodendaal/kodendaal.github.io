@@ -121,6 +121,16 @@ While the current DCGAN model demonstrated promise, there’s room for advanceme
 
 ## Conclusion
 
-The fusion of GANs and engineering is more than a technical milestone—it's a paradigm shift. At MARIN, in collaboration with the University of Strathclyde, we've laid the groundwork for AI-driven ship design. As technology evolves, so does our capacity to innovate, optimize, and redefine what’s possible in engineering.
+The fusion of GANs and engineering is more than a technical milestone—it's a paradigm shift. At MARIN, in collaboration with the University of Strathclyde, we've laid the groundwork for AI-driven ship design. By leveraging **Generative Adversarial Networks**, we've demonstrated the potential for rapid, automated, and innovative hull geometry generation.
 
-*Stay tuned as we continue to explore the frontiers of AI and its transformative potential for the maritime industry and beyond.*
+While the current model showed significant promise, there’s still room to expand—improving datasets, refining architectures, and integrating physical constraints will further enhance its utility in real-world applications.
+
+---
+
+### Explore the Code
+
+For those eager to dive deeper into the technical side, we've made the training script for a **GAN model** open-source. This script includes the core DCGAN architecture, loss functions, and training workflows used in this project. While the dataset remains proprietary (For now...), the script provides a robust starting point for exploring similar applications in your domain.
+
+[Access the training script on GitHub](#) *(Replace with actual link)*
+
+As technology evolves, so does our capacity to innovate, optimize, and redefine what's possible in engineering. Join us on this journey to unlock new frontiers in design and automation!
