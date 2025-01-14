@@ -1,5 +1,5 @@
 ---
-title:  "Revolutionizing Hull Design with GANs: Exploring Engineering's Future"
+title:  "AI for Engineering: Revolutionizing Hull Design with GANs"
 mathjax: true
 layout: post
 categories: 
