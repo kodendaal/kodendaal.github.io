@@ -11,7 +11,7 @@ categories:
   <img src="http://kodendaal.github.io/assets/sailing_game_logo1.png" alt="Sailing Game" style="width: 800px; height: auto;">
 </div>
 
-**Please Note: This blog post is still a work in progress. I plan to update this as soon as possible. Please check back at a later date.**
+# **Please Note: This blog post is still a work in progress. I plan to update this as soon as possible. Please check back at a later date.**
 
 Creating a game is like setting sail into uncharted waters—a mix of excitement, learning, and overcoming challenges. My latest project, a **sailing regatta game**, combines the thrill of racing with the ingenuity of artificial intelligence (AI). Players take control of a nimble virtual sailboat and compete against a Reinforcement Learning (RL) agent that learns to master the art of sailing.
 
