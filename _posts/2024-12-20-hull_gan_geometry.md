@@ -43,26 +43,35 @@ Through iterative adversarial training, the generator learns to create increasin
 - **Loss Functions**: Implemented advanced metrics for optimization:
   - **Binary Cross-Entropy Loss (BCE)** for adversarial training:
 
-    $$L_D = -\mathbb{E}_{x \sim p_{\text{data}}}[\log(D(x))] - \mathbb{E}_{z \sim p_z}[\log(1 - D(G(z)))]$$
+    $$
+    L_D = -\mathbb{E}_{x \sim p_{\text{data}}}[\log(D(x))] - \mathbb{E}_{z \sim p_z}[\log(1 - D(G(z)))]
+    $$
 
-    $$L_G = -\mathbb{E}_{z \sim p_z}[\log(D(G(z)))]$$
+    $$
+    L_G = -\mathbb{E}_{z \sim p_z}[\log(D(G(z)))]
+    $$
     
   - **Space-Filling Loss** to ensure diversity:
     
-    $$S = \sum_{i=1}^{m-1} \sum_{j=i+1}^m \frac{1}{\|\mathbf{x}_j - \mathbf{x}_i\|^2}$$
+    $$
+    S = \sum_{i=1}^{m-1} \sum_{j=i+1}^m \frac{1}{\|\mathbf{x}_j - \mathbf{x}_i\|^2}
+    $$
     
     where $$(\mathbf{x}_i, \mathbf{x}_j)$$ are generated designs, and $$( m )$$ is the total number of designs.
   - **Laplace Loss** to reduce noise and improve smoothness:
 
-    $$L_{\text{lap}} = \sum_{i} |\Delta x_i|$$
+    $$
+    L_{\text{lap}} = \sum_{i} |\Delta x_i|
+    $$
 
     where $$( \Delta x_i )$$ is the Laplacian for point $$( i )$$.
 
 - **Post-Processing**: Applied Gaussian smoothing and symmetry enforcement for refinement:
-    \[
+    $$
     x_{\text{smoothed}} = x \ast G(\mu, \sigma^2)
-    \]
-    where \( G(\mu, \sigma^2) \) is a Gaussian kernel.
+    $$
+  
+    where $$( G(\mu, \sigma^2) )$$ is a Gaussian kernel.
 
 <div style="text-align: center;">
   <img src="http://kodendaal.github.io/assets/proposed_gan_pipeline.png" alt="gan pipeline" style="width: 800px; height: auto;">
