@@ -11,6 +11,10 @@ categories:
   <img src="http://kodendaal.github.io/assets/ship_gan_cover.png" alt="gan cover" style="width: 800px; height: auto;">
 </div>
 
+**Please Note: This blog post is still a work in progress. I plan to update this as soon as possible. Please check back at a later date.**
+
+
+
 ## Introduction
 
 Modern engineering thrives on innovation, and ship design is no exception. Traditionally, creating ship hulls has been a meticulous and resource-intensive process. However, advancements in **Generative Adversarial Networks (GANs)** are revolutionizing this domain, offering unprecedented efficiency and creativity in hull geometry generation.
