@@ -11,7 +11,7 @@ categories:
   <img src="http://kodendaal.github.io/assets/ship_gan_cover.png" alt="gan cover" style="width: 800px; height: auto;">
 </div>
 
-**Please Note: This blog post is still a work in progress. I plan to update this as soon as possible. Please check back at a later date.**
+# **Please Note: This blog post is still a work in progress. I plan to update this as soon as possible. Please check back at a later date.**
 
 
 
