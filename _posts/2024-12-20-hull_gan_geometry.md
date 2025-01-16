@@ -40,6 +40,11 @@ GANs consist of two neural networks:
 1. **Generator**: Creates realistic outputs (in this case, hull geometries).
 2. **Discriminator**: Differentiates between real and generated geometries.
 
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/gendisc_pipeline.png" alt="generator discriminator pipeline" style="width: 800px; height: auto;">
+</div>
+
 Through iterative adversarial training, the generator learns to create increasingly convincing geometries, while the discriminator sharpens its evaluation skills. The result? A harmonious system producing high-quality hull designs.
 
 ### Key Features of Our DCGAN Framework
