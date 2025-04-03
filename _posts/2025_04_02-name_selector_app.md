@@ -8,7 +8,7 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/team_name.png" alt="gan cover" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/team_name.png" alt="team name" style="width: 800px; height: auto;">
 </div>
 
 
