@@ -68,9 +68,8 @@ Not only did this small project solve our team naming conundrum, but it also rem
 
 ### See It in Action!
 
-- Check out the live app hosted on Hugging Face Spaces.
-- Explore or contribute to the GitHub repository with all the code.
-
+- Check out the live app hosted on [Hugging Face Spaces.](https://huggingface.co/spaces/kode24/name_votinG)
+- Explore or contribute to the [Github Repository](https://github.com/kodendaal/rag_pdf_visualizer.git) with all the code. 
 
 Now, back to checking the leaderboard again—I think my favorite name just took the lead!
 
