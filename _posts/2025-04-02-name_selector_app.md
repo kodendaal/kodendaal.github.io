@@ -41,7 +41,11 @@ Initially, things were smooth sailing. Gradio made creating the frontend incredi
 
 Turns out, Hugging Face Spaces don't keep data forever. My carefully collected votes vanished every time the container restarted—ouch! Enter Google Sheets to the rescue. With a bit of Googling and a lot of friendly ChatGPT help, I securely connected my app to Google Sheets using a service account. Now every submission and vote was safely stored away in the magical cloud, ready to be accessed anytime.
 
-<img src="http://kodendaal.github.io/assets/naming_workflow.png" style="width: 50%; height: auto;" alt="Naming Workflow">
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/naming_workflow.png" style="width: 400px; height: auto;">
+</div>
+
 ---
 
 ## The Security Adventure
