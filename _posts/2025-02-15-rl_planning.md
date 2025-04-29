@@ -1,5 +1,5 @@
 ---
-title:  "Unpacking the Power of Clustering and Dimensionality Reduction"
+title:  "RL Planning for Traffic Lights and Warehouses"
 mathjax: true
 layout: post
 categories: 
