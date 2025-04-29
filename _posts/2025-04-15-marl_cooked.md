@@ -1,5 +1,5 @@
 ---
-title:  "RL MARL Cooked"
+title:  "Whisk It Good or Overcook! Exploring MARL"
 mathjax: true
 layout: post
 categories: 
@@ -8,81 +8,94 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/XXX" alt="Asteriods and Wine" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/overcooked.png" alt="Overcooked" style="width: 800px; height: auto;">
 </div>
 
-
-### **Lessons from Asteroids and Wine**
-
-When faced with complex datasets like asteroid attributes and wine quality scores, it’s easy to feel like a miner sifting through a mountain of data in search of gold nuggets. In my recent project, I tackled this very challenge using **clustering** and **dimensionality reduction**—two unsupervised learning techniques that simplify and interpret complex data. Armed with the NASA Near-Earth Objects (NEO) dataset and the Portuguese Wine Quality dataset, I set out to discover patterns, boost model efficiency, and uncover the secrets hidden in the numbers. Here’s what I learned!
+*A romp through multi-agent reinforcement learning that turns chaos into culinary coordination — all while keeping the maths on the menu.*  
 
 ---
 
-### **What’s the Big Deal?**
+## Order-up: why Overcooked is RL’s hottest test kitchen  
 
-Data is messy. Sometimes, it’s so messy that understanding it becomes an impossible task without some heavy-duty simplification. The NASA NEO dataset, for instance, is a treasure trove of asteroid data with features like size, velocity, and orbit, but its imbalanced nature poses a big challenge. On the other hand, the Wine Quality dataset attempts to rate wine—an already subjective task—based on attributes like acidity and pH, adding a layer of complexity and noise.
-
-This is where **clustering** (grouping similar data) and **dimensionality reduction** (paring down data while retaining key insights) come in. The goal? Make these datasets manageable, actionable, and, frankly, less overwhelming.
+Picture the scene: two frantic chefs, one cramped galley, onions rolling everywhere, timers beeping, plates vanishing… and *you* only control the learning algorithm. That’s **Overcooked-AI**, a cooperative benchmark where agents must prepare as many three-onion soups as possible within 400 ticks of the game clock. Sparse rewards, tight corridors, and a teammate that can body-block you at every turn — it’s the perfect crucible for **multi-agent reinforcement learning (MARL)**.   
 
 ---
 
-### **Clustering Showdown: K-Means vs. GMM**
+## Which recipe did we try?  
 
-Clustering techniques help us group data into meaningful clusters, but not all methods are created equal:
+| Style | Algorithm | TL;DR |
+|-------|-----------|-------|
+| **Solo cooks** 👩‍🍳 | **Independent Q-Learning + Double DQN** (IQL-DDQN) | Treat each chef as an island; hope for emergent teamwork. Simple, often clueless. |
+| **Co-chef fusion** 🤝 | **Value Decomposition Network + DDQN** (VDN-DDQN) | Train one joint value, slice it into per-chef utilities so they still act locally. Adds collaboration on the cheap. |  
 
-- **K-Means** is like the efficient but slightly rigid organizer. It works fast and effectively for simple structures but stumbles when clusters are non-spherical or have varying densities. Think of it as a tidy stack of identical file folders.
-- **Gaussian Mixture Models (GMM)**, on the other hand, are the perfectionist decorators. They capture intricate structures and handle diverse shapes but need more computational firepower—and a careful eye to avoid overfitting.
+Both run under the classic **centralised training, decentralised execution** mantra: give them the full kitchen map while learning, then cut the radio and let each chef rely only on its own 96-dim observation at test time.   
 
-For the NASA dataset, K-Means and GMM both identified optimal clusters, but GMM’s flexibility shone through in capturing complex patterns. Meanwhile, the Wine dataset, with its multi-class nature, proved to be a harder nut to crack, but GMM’s probabilistic approach still edged ahead.
+### Extra spices  
 
----
-
-### **Dimensionality Reduction: Simplifying Without Sacrificing**
-
-Dimensionality reduction is like taking a sprawling novel and condensing it into a captivating short story. I explored three methods:
-
-1. **Principal Component Analysis (PCA):** The trusty workhorse, PCA excels at preserving variance and revealing trends. It’s the Marie Kondo of dimensionality reduction, tidying up while keeping what matters most.
-2. **Independent Component Analysis (ICA):** Great at separating underlying factors, ICA is a detective uncovering hidden signals. However, it’s sensitive to noise and often demands more components for accuracy.
-3. **Random Projection (RP):** Speedy and approximate, RP trades precision for efficiency. It’s the fast-food option—quick, filling, but not always as nuanced.
-
-For the NASA dataset, PCA captured 95% of the data’s variance using just 10 components, making it a star performer. ICA excelled at identifying independent components but struggled with noise. RP, while fast, didn’t maintain the structure as precisely.
+* **Symmetric replay buffer**: store each experience twice, swapping chef A ↔ chef B, which doubles useful data in a perfectly mirrored kitchen.  
+* **Reward shaping**: tiny tips for onion-in-pot (+3), dish pick-up (+1), soup pick-up (+5) — on top of the big +20 for a served bowl. Keeps gradients alive.  
+* **Curriculum**: start in the tiny **Cramped Room**, graduate to **Coordination Ring**, then tackle the beastly **Counter Circuit**.   
 
 ---
 
-### **The Magic of Combining Techniques**
+## Prep work — training at a glance  
 
-Here’s where things got interesting. By combining **clustering** and **dimensionality reduction**, I uncovered a recipe for success. For instance:
-
-- **PCA + K-Means** struck the perfect balance between bias and variance, delivering well-defined clusters that significantly improved neural network training and prediction performance.
-- **ICA + GMM** showed promise but was less consistent, often needing careful tuning.
-- **RP**, while quick, struggled with stability when paired with clustering methods.
-
-The takeaway? Adding clustering labels to reduced datasets supercharges model performance by infusing them with structural insights while keeping computational costs manageable.
+* **Optimiser**: DDQN with target-network soft updates (τ ≈ 2-3).  
+* **Batch**: 1 024 (big bites keep gradients smooth).  
+* **ε-greedy**: linear decay from 1 → 0.1 by 80 % of training, tiny 0.05 jitter at evaluation.  
+* **Episodes**: 1 000 / 2 500 / 5 000 for the three layouts, plus Optuna sweeps (10 trials) to lock hyper-params.   
 
 ---
 
-### **Takeaways for Real-World Applications**
+## Results — how many bowls did we ladle?  
 
-This project reinforced an essential truth in machine learning: there’s no one-size-fits-all solution. The effectiveness of these techniques depends heavily on the dataset. However, **PCA combined with K-Means** consistently emerged as the MVP (Most Valuable Pair), balancing complexity and computational cost while improving accuracy.
+| Layout | Benchmark = 7 soups | IQL-DDQN | VDN-DDQN | Curriculum (VDN) |
+|--------|--------------------|----------|----------|-------------------|
+| Cramped Room | ✓ | 3 | **12** | — |
+| Coordination Ring | ✓ | 0 | **14** | — |
+| Counter Circuit | ✗ | 0 | 0 | **7** |
 
-If you’re tackling real-world problems, consider:
-- **The dataset’s structure:** Noise, class imbalance, and complexity influence the best approach.
-- **Your goals:** Need precision? Go for PCA. Want speed? RP might be your friend.
-- **Trade-offs:** Remember, there’s always a balance between performance and computational demands.
-
----
-
-### **Final Thoughts**
-
-From categorizing asteroids to assessing wine quality, this project has been a thrilling journey through the world of unsupervised learning. While each method had its strengths and quirks, the real magic lay in combining their powers to make sense of messy, real-world data.
-
-So whether you’re predicting planetary defense risks or simply trying to pick the best wine for dinner, clustering and dimensionality reduction might just be the tools you need to uncover the patterns hidden in your data.
-
-Cheers to the power of machine learning—and to a glass of well-rated Vinho Verde! 🍷
+* In small & medium kitchens, **VDN crushed the benchmark**, proving that a shared value table makes chefs stop bumping and start batching onions.  
+* In the labyrinthine Counter Circuit, both methods face-planted — until we **boot-strapped from a simpler level**. Curriculum trimmed learning from 5 000 futile episodes to **~1 100** productive ones.   
 
 ---
 
-*What are your favorite machine learning techniques? Have you tried combining clustering with dimensionality reduction? Let me know in the comments!*
+### Ablation quick-fire 🔍  
+
+| Toggle | Outcome |
+|--------|---------|
+| **Reward shaping OFF** | Agents starved: no gradient, no soups. |
+| **Symmetric buffer OFF** | -30 % servings; sample efficiency tanked. |
+| **DDQN → vanilla DQN** | No big change in Cramped Room (low stochasticity). Expect bigger wins in messier kitchens. |   
+
+---
+
+## What we learned (besides julienning onions)
+
+1. **Credit assignment is king** — VDN’s additive trick is cheap yet powerful for tightly-coupled tasks.  
+2. **Reward shaping must be Goldilocks** — too little and you starve, too much and agents farm onions forever without serving.  
+3. **Symmetry is free lunch** — mirror every trajectory and your replay buffer suddenly sees twice the angles.  
+4. **Curriculum beats brute force** — let chefs learn footwork in a tiny galley before throwing them into the Costco kitchen.  
+5. **Complex layouts still hurt** — for true mastery we’ll likely need QMIX, MAPPO or distributional tricks.   
+
+---
+
+## Next courses  
+
+* **Non-linear mixers** (QMIX) to model “you chop, I stir” dependencies.  
+* **Prioritised + n-step replay** for snappier credit propagation.  
+* **Potential-based shaping** that rewards proximity to *future* soup deliveries, not just onions-in-pot.  
+* **Longer training & randomised layouts** to nix over-fitting.  
+
+---
+
+## Final plate-up  
+
+> *“Great kitchens run on rhythm. Great MARL agents learn that rhythm by sharing credit, replaying symmetry, and never forgetting to stir the pot.”*  
+
+With a pinch of decomposition and a dash of curriculum, our twin neural chefs now crank out onion soup like a well-oiled diner. Lunch rush conquered — time to teach them soufflés. Bon appétit, RL enthusiasts!
+
+---
 
 **Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/CS7642_RL___Project_3_final.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
