@@ -84,7 +84,7 @@ Cheers to the power of machine learning—and to a glass of well-rated Vinho Ver
 
 *What are your favorite machine learning techniques? Have you tried combining clustering with dimensionality reduction? Let me know in the comments!*
 
-**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/unsupervised_learning.pdf" target="_blank">please click here</a> to access the PDF directly.**
+**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/CS7642_RL___Project_1_final.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
 <div id="adobe-dc-view" style="width: 100%;"></div>
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
@@ -92,8 +92,8 @@ Cheers to the power of machine learning—and to a glass of well-rated Vinho Ver
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "03c5f4ff786a46619b7edf7178e35c18", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://kodendaal.github.io/assets/XXX"}},
-			metaData:{fileName: "unsupervised_learning.pdf"}
+			content:{location: {url: "https://kodendaal.github.io/assets/CS7642_RL___Project_1_final.pdf"}},
+			metaData:{fileName: "CS7642_RL___Project_1_final"}
 		}, {embedMode: "IN_LINE"});
 	});
 </script>
