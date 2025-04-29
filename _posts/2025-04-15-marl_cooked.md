@@ -1,5 +1,5 @@
 ---
-title:  "Whisk It Good or Overcook! Exploring MARL"
+title:  "Whisk It Good—Or Risk It Overcooked!"
 mathjax: true
 layout: post
 categories: 
