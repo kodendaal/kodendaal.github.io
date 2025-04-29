@@ -1,5 +1,5 @@
 ---
-title:  "RL Planning for Traffic Lights and Warehouses"
+title:  "Stop, Go, Deliver! An introduction to RL methods"
 mathjax: true
 layout: post
 categories: 
@@ -8,17 +8,14 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/XXX" alt="Asteriods and Wine" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/traffic_warehouse.png" alt="Asteriods and Wine" style="width: 800px; height: auto;">
 </div>
 
-
-# Stopping for Green: teaching algorithms to tame traffic lights *and* warehouse robots 🚦🤖  
-
-*(A breezy tour of reinforcement-learning experiments that started with “what if?” and ended with **better-behaved intersections and delivery droids**.)*  
+*A breezy tour of reinforcement-learning experiments that started with “what if?” and ended with **better-behaved intersections and delivery droids**.*  
 
 ---
 
-## 1  Why I suddenly cared about queues and collisions  
+## Why I suddenly cared about queues and collisions  
 
 Picture this: you’re running late, the light stubbornly stays red, and the only thing moving is your smartwatch’s heart-rate graph. Later, you order something online and—surprise!—it’s delayed because a warehouse robot got lost playing bumper-cars with a forklift.  
 
@@ -31,7 +28,7 @@ Each environment is an MDP (state, action, reward, transition, discount). Now we
 
 ---
 
-## 2  Meet the squad (a.k.a. four ways to adult in an MDP)
+## Meet the squad (a.k.a. four ways to adult in an MDP)
 
 | Persona | Algorithm | Elevator pitch |
 |---------|-----------|----------------|
@@ -44,7 +41,7 @@ All four share an ε-greedy *“try-stuff-early, exploit-later”* vibe, with ex
 
 ---
 
-## 3  Experiment montage (what we tweaked and why)
+## Experiment montage (what we tweaked and why)
 
 ### Traffic-Light Town  
 *E1* Baseline; *E2* **reward-shaping** (bonuses for clearing queues, side-eye for congestion); *E3* early-exit when intersection is empty; *E4* balanced vs skewed traffic arrival rates.
@@ -56,15 +53,15 @@ Same hyper-params unless noted: γ = 0.9, α = 0.1, episodes = 2 000.
 
 ---
 
-## 4  What happened (highlights only—we spared you 40 000 plots)
+## What happened (highlights only—we spared you 40 000 plots)
 
-### 4.1  Traffic results  
+### Traffic results  
 
 * **Reward shaping = green lights galore**. Model-free agents stopped the dreaded *“blink-blink-stall”* pattern and actually **kept queues short**.  
 * **Terminal on clearance** made planners laser-focused on short-term wins; model-free lost some steam because episodes ended before long horizons paid off.  
 * **Skewed arrivals** (think Monday-morning commute) exposed model-free bias—over-serving the busy lane, starving the quiet one. Planners stayed balanced.  
 
-### 4.2  Warehouse results  
+### Warehouse results  
 
 * **Distance-based treats** turned Q-Learning into a speedy courier (≈ 3 boxes/episode) while SARSA chose the *“slow-and-no-crash”* lifestyle.  
 * Randomising the goal ballooned the state-space; SARSA froze, Q-Learning bumped into things—but extra training (10 k episodes) revived them.  
@@ -72,7 +69,7 @@ Same hyper-params unless noted: γ = 0.9, α = 0.1, episodes = 2 000.
 
 ---
 
-## 5  Hyper-parameter heartbreak (& hope)  
+## Hyper-parameter heartbreak (& hope)  
 
 | Knob | Low setting | High setting | Observed mood swing |
 |------|-------------|--------------|---------------------|
@@ -85,7 +82,7 @@ Moral: tune knobs *per environment*. One size never fits all—just like traffic
 
 ---
 
-## 6  Big take-aways (TL;DR)
+## Big take-aways (TL;DR)
 
 1. **Planners** shine when you *know* the rules and crave fast convergence—great for modest intersections.  
 2. **Model-free** wins when the map is fuzzy or huge—robots bump into unknowns daily.  
@@ -95,7 +92,7 @@ Moral: tune knobs *per environment*. One size never fits all—just like traffic
 
 ---
 
-## 7  Future mischief
+## Future mischief
 
 * Multi-intersection networks with coordinated lights (think agent gossip).  
 * Swarms of robots sharing Q-tables or gossiping via federated learning.  
