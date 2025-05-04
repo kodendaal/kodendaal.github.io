@@ -85,17 +85,6 @@ Twenty-thousand simulation steps (\~2 hours on a plain laptop) with PPO hyper-pa
 * 100 % lap completion on all tracks
 * Lap times: **92 s** (A-Z), **302 s** (Smile), **431 s** (Empire)
 
-### Obstacle slalom: **Traffic-cone trauma**
-
-* Completion plummets to **15–22 %**. The car either tip-toes till timeout or swerves into the wall after a heroic dodge.
-
-### Head-to-Head: **Bumper-car chaos**
-
-* Completion: **\~50–60 %** on the roomy tracks, nosedives to **≈30 %** on skinny Empire City. Opponent body-checks are brutal.
-
-Moral: Our solo-racing prodigy panics when the playground gets crowded.&#x20;
-
-
 <div style="text-align: center; margin: 20px;">
   <video style="width: 100%; max-width: 100%; height: auto;" controls>
     <source src="http://kodendaal.github.io/assets/REINVE~1.MP4" type="video/mp4">
@@ -119,6 +108,15 @@ Moral: Our solo-racing prodigy panics when the playground gets crowded.&#x20;
   </video>
 </div>
 
+### Obstacle slalom: **Traffic-cone trauma**
+
+* Completion plummets to **15–22 %**. The car either tip-toes till timeout or swerves into the wall after a heroic dodge.
+
+### Head-to-Head: **Bumper-car chaos**
+
+* Completion: **\~50–60 %** on the roomy tracks, nosedives to **≈30 %** on skinny Empire City. Opponent body-checks are brutal.
+
+Moral: Our solo-racing prodigy panics when the playground gets crowded.&#x20;
 
 
 ---
@@ -147,7 +145,7 @@ We turned a timid toy into a track-lapping champ—*as long as nobody else shows
 
 ---
 
-**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/CS7642_RL___Project_4_final.pdf" target="_blank">please click here</a> to access the PDF directly.**
+**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/CS7642_RL___Project_4_final_v0.1.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
 <div id="adobe-dc-view" style="width: 100%;"></div>
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
@@ -155,8 +153,8 @@ We turned a timid toy into a track-lapping champ—*as long as nobody else shows
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "f737bdc1a7c441cdab7237b8f5ac89f7", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://kodendaal.github.io/assets/CS7642_RL___Project_4_final.pdf"}},
-			metaData:{fileName: "CS7642_RL___Project_4_final"}
+			content:{location: {url: "https://kodendaal.github.io/assets/CS7642_RL___Project_4_final_v0.1.pdf"}},
+			metaData:{fileName: "CS7642_RL___Project_4_final_v0.1"}
 		}, {embedMode: "IN_LINE"});
 	});
 </script>
