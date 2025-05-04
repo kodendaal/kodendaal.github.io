@@ -90,6 +90,32 @@ Twenty-thousand simulation steps (\~2 hours on a plain laptop) with PPO hyper-pa
 
 Moral: Our solo-racing prodigy panics when the playground gets crowded.&#x20;
 
+
+<div style="text-align: center; margin: 20px;">
+  <video style="width: 100%; max-width: 100%; height: auto;" controls>
+    <source src="http://kodendaal.github.io/assets/REINVE~1.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+<div style="text-align: center; margin: 20px;">
+  <video style="width: 100%; max-width: 100%; height: auto;" controls>
+    <source src="http://kodendaal.github.io/assets/NEW_YO~1.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+<div style="text-align: center; margin: 20px;">
+  <video style="width: 100%; max-width: 100%; height: auto;" controls>
+    <source src="http://kodendaal.github.io/assets/NEW_YO~1.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+
+
 ---
 
 ## Lessons from the Crash Logs
