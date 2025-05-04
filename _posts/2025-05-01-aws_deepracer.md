@@ -35,6 +35,11 @@ The agent sees the world through a **3-layer CNN** that chews on twin 160 × 120
 
 ## Track Walk & Scenarios
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/deepracer.png" alt="tracks_project4.png" style="width: 800px; height: auto;">
+</div>
+
+
 | Track nickname     | Real name          | Width  | Personality                      |
 | ------------------ | ------------------ | ------ | -------------------------------- |
 | **A-Z Speedway**   | reInvent2019 Wide  | 1.07 m | Friendly oval for first dates    |
