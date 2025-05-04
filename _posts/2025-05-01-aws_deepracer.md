@@ -40,11 +40,11 @@ The agent sees the world through a **3-layer CNN** that chews on twin 160 × 120
 </div>
 
 
-| Track nickname     | Real name          | Width  | Personality                      |
-| ------------------ | ------------------ | ------ | -------------------------------- |
-| **A-Z Speedway**   | reInvent2019 Wide  | 1.07 m | Friendly oval for first dates    |
-| **Smile Speedway** | reInvent2019 Track | 1.07 m | Twisty grin-shaped sprint        |
-| **Empire City**    | New York Track     | 0.76 m | Skinny, skyscraper-tight corners |
+| Track nickname     | Real name          | Length | Width  | Personality                      |
+| ------------------ | ------------------ | ------ | ------ | -------------------------------- |
+| **A-Z Speedway**   | reInvent2019 Wide  | 16.6 m | 1.07 m | Friendly oval for first dates    |
+| **Smile Speedway** | reInvent2019 Track | 23.1 m | 1.07 m | Twisty grin-shaped sprint        |
+| **Empire City**    | New York Track     | 21.9 m | 0.76 m | Skinny, skyscraper-tight corners |
 
 Each track is tackled in three flavors:
 
