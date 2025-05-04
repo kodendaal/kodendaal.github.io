@@ -36,7 +36,7 @@ The agent sees the world through a **3-layer CNN** that chews on twin 160 × 120
 ## Track Walk & Scenarios
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/deepracer.png" alt="tracks_project4.png" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/tracks_project4.png" alt="tracks" style="width: 800px; height: auto;">
 </div>
 
 
