@@ -47,6 +47,11 @@ Both share an experience-replay scrapbook so they don’t overreact to any singl
 ## First light: the baseline launch log  
 Early episodes looked like *SpaceX prototypes*: spectacular hops, frequent explosions, reward graph doing the samba. But by episode ~800 the curve flirted with the “mission-success” line of **200 points average**. Default settings finally landed at **≈ 249 ± 57** on the last run—mission technically accomplished!   
 
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/lunar_lander_ddpg_clip_fail.gif" alt="lunar fails" style="width: 800px; height: auto;">
+</div>
+
 ---
 
 ## Turbo-tuning with Optuna  
@@ -66,6 +71,11 @@ Four knobs went into the Bayesian blender:
 Best trial (call sign **T-4**) cruised to **264 ± 23** with steadier landings and smaller variances. Not bad for 20 tries!   
 
 *(Fun fact: a hand-coded PID heuristic still scored ~290, proving that humans with equations can out-fly RL—**for now**.)*  
+
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/lunar_lander_ddpg_clip_good.gif" alt="lunar fails" style="width: 800px; height: auto;">
+</div>
 
 ---
 
