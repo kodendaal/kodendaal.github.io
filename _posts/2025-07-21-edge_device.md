@@ -1,6 +1,15 @@
+---
+title:  "Welcome to the Edge: An AI Adventure in Your Pocket!"
+mathjax: true
+layout: post
+categories: 
+  = github
+  - website
+---
 
-
-# Welcome to the Edge: An AI Adventure in Your Pocket!
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_ai.png" alt="deepracer" style="width: 800px; height: auto;">
+</div>
 
 Ever wondered how your smart speaker magically perks up when you say its name, even when the Wi-Fi is down? Or how your new camera can spot a squirrel in the yard without sending a single byte of video to the cloud?
 
