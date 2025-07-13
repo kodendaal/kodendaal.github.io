@@ -159,15 +159,14 @@ Without realizing it, players start to internalize real sailing tactics: *head u
 
 ---
 
-## 7. Performance Tricks (a.k.a. Hitting 60 FPS)
+## 7. Putting It all Together
 
-Keeping a real-time physics simulation smooth requires a few tricks:
-
-1.  **Blit Once, Rotate Often:** The boat sprite is loaded once. Each frame, we use the hardware-accelerated `pygame.transform.rotozoom` to rotate it. This is much faster than rotating the source image.
-2.  **Dirty-Rect Redrawing:** Instead of redrawing the whole screen every frame, we only update the rectangular areas ("rects") where things have moved—the boats, marks, and UI text.
-3.  **Vectorized Math:** In hot paths like the polar diagram lookup, I use NumPy to perform vectorized calculations, which is significantly faster for numerical operations than pure Python loops.
-
-The result? The simulation hums along at under 2ms per boat per frame on my old Surface Laptop.
+<div style="text-align: center; margin: 20px;">
+  <video style="width: 100%; max-width: 100%; height: auto;" controls>
+    <source src="http://kodendaal.github.io/assets/sailing_video_v1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ---
 
