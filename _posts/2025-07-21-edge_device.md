@@ -26,7 +26,7 @@ Strap in, get curious, and let's dive into the tiny but mighty universe of Edge 
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week1.png" alt="week1" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week1.png" alt="week1" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 1: So, Why Bother with the Edge Anyway?**
@@ -45,7 +45,7 @@ And **TinyML**? It’s the art of squeezing that AI chef into the smallest kitch
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week2.png" alt="week2" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week2.png" alt="week2" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 2: Meet the Contenders: A Hardware Showdown**
@@ -76,7 +76,7 @@ Moving AI to the edge means you can't just throw infinite computing power at a p
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week3.png" alt="week3" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week3.png" alt="week3" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 3: What's a "Lightweight" Model? (And What's the Catch?)**
@@ -100,7 +100,7 @@ The main catch is **accuracy**. A smaller model just can't learn the same amount
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week4.png" alt="week4" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week4.png" alt="week4" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 4: Shrink-Ray for AI: The Magic of Quantization**
@@ -121,7 +121,7 @@ The trade-off, of course, is that with a simpler vocabulary, the model might los
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week5.png" alt="week5" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week5.png" alt="week5" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 5: The Five Great Headaches of Edge Data**
@@ -139,7 +139,7 @@ Getting good data on an edge device isn't easy. You're trying to find gold in a 
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week6.png" alt="week6" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week6.png" alt="week6" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 6: The Holy Trinity of Real-Time Vision**
@@ -157,7 +157,7 @@ And the secret fourth ingredient? **Context.** For tracking motion or gestures, 
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week7.png" alt="week7" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week7.png" alt="week7" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 7: The Edge AI Report Card: How Do You Grade a Model?**
@@ -185,7 +185,7 @@ You can’t just pick the "smartest" model. You need the *right* model for the j
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/edge_week8.png" alt="week8" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/edge_week8.png" alt="week8" style="width: 600px; height: auto;">
 </div>
 
 ## **Week 8: With Great Power Comes Great Responsibility**
