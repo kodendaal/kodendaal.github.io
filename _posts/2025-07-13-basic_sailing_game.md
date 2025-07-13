@@ -1,4 +1,16 @@
-# Racing the Wind: Building a Python-Powered Sailing Regatta Simulator ⛵️💨
+---
+title:  "Racing the Wind: Building a Python-Powered Sailing Regatta Simulator"
+mathjax: true
+layout: post
+categories: 
+  = github
+  - website
+---
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/sailing_game_logo1.png" alt="Sailing Game" style="width: 800px; height: auto;">
+</div>
+
 
 Ever wondered what it feels like to jibe around the leeward mark with three hungry competitors nipping at your transom, all without getting your deck shoes wet? I did. So I wrote a little game that drops you into a tactical regatta against a fleet of AI skippers, each with their own quirks and weaknesses.
 
