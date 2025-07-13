@@ -1,5 +1,5 @@
 ---
-title:  "The Edge Chronicles: An AI Adventure in Your Pocket!"
+title:  "The Edge Chronicles: Tales of Tiny AI for Your Pocket!"
 mathjax: true
 layout: post
 categories: 
