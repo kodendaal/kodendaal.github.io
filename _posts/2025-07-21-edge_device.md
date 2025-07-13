@@ -25,6 +25,10 @@ Strap in, get curious, and let's dive into the tiny but mighty universe of Edge 
 
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week1.png" alt="week1" style="width: 800px; height: auto;">
+</div>
+
 ## **Week 1: So, Why Bother with the Edge Anyway?**
 
 ### **Why are edge devices important in AI deployment? And what's this TinyML thing everyone's talking about?**
@@ -39,6 +43,10 @@ Relying on the cloud for AI is like ordering pizza every night. It’s convenien
 And **TinyML**? It’s the art of squeezing that AI chef into the smallest kitchen imaginable—think wearables, implants, and tiny sensors. Its biggest impact is putting intelligence in places we never thought possible, like a medical implant that predicts health events or a smart home that truly learns your habits to save energy.
 
 ---
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week2.png" alt="week2" style="width: 800px; height: auto;">
+</div>
 
 ## **Week 2: Meet the Contenders: A Hardware Showdown**
 
@@ -67,6 +75,10 @@ Moving AI to the edge means you can't just throw infinite computing power at a p
 
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week3.png" alt="week3" style="width: 800px; height: auto;">
+</div>
+
 ## **Week 3: What's a "Lightweight" Model? (And What's the Catch?)**
 
 ### **What makes a vision model “lightweight”? Let's talk about the classic trade-off: accuracy vs. size.**
@@ -87,6 +99,10 @@ The main catch is **accuracy**. A smaller model just can't learn the same amount
 
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week4.png" alt="week4" style="width: 800px; height: auto;">
+</div>
+
 ## **Week 4: Shrink-Ray for AI: The Magic of Quantization**
 
 ### **How does quantization affect model performance? And when would you choose speed over smarts?**
@@ -104,6 +120,10 @@ The trade-off, of course, is that with a simpler vocabulary, the model might los
 
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week5.png" alt="week5" style="width: 800px; height: auto;">
+</div>
+
 ## **Week 5: The Five Great Headaches of Edge Data**
 
 ### **What are the key challenges when collecting and preprocessing data at the edge?**
@@ -118,6 +138,10 @@ Getting good data on an edge device isn't easy. You're trying to find gold in a 
 
 ---
 
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week6.png" alt="week6" style="width: 800px; height: auto;">
+</div>
+
 ## **Week 6: The Holy Trinity of Real-Time Vision**
 
 ### **What's critical for running real-time vision tasks like object tracking or gesture recognition?**
@@ -131,6 +155,10 @@ For AI vision that feels instant and reliable on an edge device, you need to nai
 And the secret fourth ingredient? **Context.** For tracking motion or gestures, one frame isn't enough. The model needs to see a sequence. The trick is to do this without burning through all your resources—clever models do this by reusing information between frames instead of starting from scratch every time.
 
 ---
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week7.png" alt="week7" style="width: 800px; height: auto;">
+</div>
 
 ## **Week 7: The Edge AI Report Card: How Do You Grade a Model?**
 
@@ -155,6 +183,10 @@ You can’t just pick the "smartest" model. You need the *right* model for the j
 *   **Industrial Defect Camera:** Gets an **A+ in Accuracy and Throughput**. It’s plugged into a wall, so **Power Efficiency is a C**—it doesn’t matter as much.
 
 ---
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/edge_week8.png" alt="week8" style="width: 800px; height: auto;">
+</div>
 
 ## **Week 8: With Great Power Comes Great Responsibility**
 
