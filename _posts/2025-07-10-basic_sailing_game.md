@@ -132,6 +132,15 @@ This makes it trivial to add new competitors:
 
 > **DIY Challenge:** Drop a file in `strategies/`, implement the `update` method, and your very own bot will be on the start line for the next race!
 
+<div style="text-align: center; margin: 20px;">
+  <video style="width: 100%; max-width: 100%; height: auto;" controls>
+    <source src="http://kodendaal.github.io/assets/testing_pygame.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+*Testing the strategies (4x speed)*
+
 ---
 
 ## 5. The Race Director: Orchestrating the Chaos
@@ -167,6 +176,8 @@ Without realizing it, players start to internalize real sailing tactics: *head u
     Your browser does not support the video tag.
   </video>
 </div>
+
+*Regatta Demonstration (2x speed)*
 
 ---
 
