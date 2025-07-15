@@ -153,3 +153,20 @@ For those eager to dive deeper into the technical side, we've made the training 
 [Access the training script on GitHub](to be added) 
 
 As technology evolves, so does our capacity to innovate, optimize, and redefine what's possible in engineering. Join us on this journey to unlock new frontiers in design and automation!
+
+
+---
+
+**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/CS7642_RL___Project_1_final.pdf" target="_blank">please click here</a> to access the PDF directly.**
+
+<div id="adobe-dc-view" style="width: 100%;"></div>
+<script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
+<script type="text/javascript">
+	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+		var adobeDCView = new AdobeDC.View({clientId: "7b8260c8bb9d4541b67bc1239ced56ff", divId: "adobe-dc-view"});
+		adobeDCView.previewFile({
+			content:{location: {url: "https://kodendaal.github.io/assets/GAN_project_prelim.pdf"}},
+			metaData:{fileName: "GAN_Project_Preliminary"}
+		}, {embedMode: "IN_LINE"});
+	});
+</script>
