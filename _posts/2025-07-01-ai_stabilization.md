@@ -49,6 +49,18 @@ To make the challenge realistic, we imposed physical limits, just as a real fin 
 | $$\delta_{act}$$     | Actual fin angle         | [-30, +30]  |
 | $$a_t$$         | Commanded fin angle      | [-30, +30]  |
 
+**Table 1 – Observation and action limits used in the RL workflow**
+
+| Symbol          | Physical meaning                | Range&nbsp;(deg) |
+|-----------------|---------------------------------|------------------|
+| $\phi$          | Roll angle                      | \[-60, +60]      |
+| $\dot\phi$      | Roll rate (deg/s)               | \[-360, +360]    |
+| $\ddot\delta$   | Fin angular accel. (deg/s$^2$)  | \[-60, +60]      |
+| $\delta_\text{act}$ | Actual fin angle            | \[-30, +30]      |
+| $a_t$           | Commanded fin angle             | \[-30, +30]      |
+
+
+
 ### Step 2: The Brains of the Operation
 
 With our digital ocean ready, we needed an AI "brain" to navigate it. We chose a powerful, state-of-the-art RL algorithm called **Soft Actor-Critic (SAC)**. While other methods like Model Predictive Control (MPC) are powerful, they require an accurate model of the system dynamics. We chose SAC for its model-free nature, allowing it to learn directly from interaction in our complex, nonlinear environment.
