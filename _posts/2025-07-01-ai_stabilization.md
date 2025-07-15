@@ -41,11 +41,12 @@ At every time step (in our case, every 0.25 seconds), this dialogue unfolds:
 To make the challenge realistic, we imposed physical limits, just as a real fin system would have.
 
 **Table 1: Observation and action limits used in the RL workflow.**
+
 | Symbol      | Physical meaning         | Range (deg) |
-| :---------- | :----------------------- | :---------- |
+| ---------- | ----------------------- | ---------- |
 | $$\phi$$         | Roll angle               | [-60, +60]  |
 | $$\dot{\phi}$$   | Roll rate (deg/s)        | [-360, +360] |
-| $$\ddot{\delta}$$  | Fin angular accel. (deg/s²) | [-60, +60]  |
+| $$\ddot{\delta}$$  | Fin angular accel. ($$deg/s^2$$) | [-60, +60]  |
 | $$\delta_{act}$$     | Actual fin angle         | [-30, +30]  |
 | $$a_t$$         | Commanded fin angle      | [-30, +30]  |
 
