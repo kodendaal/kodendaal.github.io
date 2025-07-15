@@ -67,8 +67,8 @@ $$
 Let's break this down:
 *   **$$\pi^*$$**: This represents the optimal policy we are trying to find.
 *   **$$\mathbb{E}_{...}[r(o_t, a_t)]$$**: This is the standard RL objective—the expected cumulative reward (\(r\)) over time.
-*   **$$α H(π(\cdot | o_t))$$**: This is the entropy bonus, the secret sauce of SAC.
-    *   **$$H(π(\cdot | o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
+*   **$$α H(π(\cdot \| o_t))$$**: This is the entropy bonus, the secret sauce of SAC.
+    *   **$$H(π(\cdot \| o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
     *   **$$α$$** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher $$α$$ means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
 
 ### Step 3: A Curriculum for a Digital Sailor
@@ -90,6 +90,7 @@ This function explicitly penalizes two things: the squared residual roll angle (
 We don't want an agent that is a one-trick pony. To create a robust, seasoned sailor, we used **Domain Randomization**. Instead of training on a single sea state, we subjected the agent to a wide and constantly changing variety of conditions at the start of every training episode.
 
 **Table 2: Domain randomization envelope for sea-state parameters.**
+
 | Parameter               | Min/Max or Value           |
 | ---------------------- | ------------------------- |
 | $$H_s$$ (significant height) | [0.5 m, 2.0 m]             |
