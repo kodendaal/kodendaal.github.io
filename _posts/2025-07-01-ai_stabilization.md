@@ -1,5 +1,5 @@
 ---
-title:  "Teaching an Old Ship New Tricks: Taming Wave-Induced Stationary Roll with Deep RL"
+title:  "Smooth Sailing: Taming Wave-Induced Roll with Deep RL"
 mathjax: true
 layout: post
 categories: 
