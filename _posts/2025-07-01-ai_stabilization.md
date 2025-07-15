@@ -30,7 +30,7 @@ We developed a custom environment, compatible with the industry-standard OpenAI 
 
 At every time step (in our case, every 0.25 seconds), this dialogue unfolds:
 1.  **Observation:** The Environment tells the Agent what's happening. This isn't just a single number; it's a vector of crucial data:
-    \(o_t = [\phi, \dot{\phi}, \ddot{\delta}, \delta_{act}]^T\)
+    $$o_t = [\phi, \dot{\phi}, \ddot{\delta}, \delta_{act}]^T$$
     *   $$\phi$$: The current roll angle of the ship.
     *   $$\dot{\phi}$$: The current roll rate (how fast it's rolling).
     *   $$\ddot{\delta}$$: The fin's angular acceleration.
@@ -50,18 +50,6 @@ To make the challenge realistic, we imposed physical limits, just as a real fin 
 | $$\delta_{act}$$     | Actual fin angle         | [-30, +30]  |
 | $$a_t$$         | Commanded fin angle      | [-30, +30]  |
 
-**Table 1 – Observation and action limits used in the RL workflow**
-
-| Symbol          | Physical meaning                | Range&nbsp;(deg) |
-|-----------------|---------------------------------|------------------|
-| \(\phi\)          | Roll angle                      | \[-60, +60]      |
-| \(\dot\phi\)      | Roll rate (deg/s)               | \[-360, +360]    |
-| \(\ddot\delta\)   | Fin angular accel. (deg/s$^2$)  | \[-60, +60]      |
-| \(\delta_\text{act}\) | Actual fin angle            | \[-30, +30]      |
-| \(a_t\)           | Commanded fin angle             | \[-30, +30]      |
-
-
-
 ### Step 2: The Brains of the Operation
 
 With our digital ocean ready, we needed an AI "brain" to navigate it. We chose a powerful, state-of-the-art RL algorithm called **Soft Actor-Critic (SAC)**. While other methods like Model Predictive Control (MPC) are powerful, they require an accurate model of the system dynamics. We chose SAC for its model-free nature, allowing it to learn directly from interaction in our complex, nonlinear environment.
@@ -77,11 +65,11 @@ $$
 $$
 
 Let's break this down:
-*   **\(\pi^*\)**: This represents the optimal policy we are trying to find.
-*   **\(\mathbb{E}_{...}[r(o_t, a_t)]$$**: This is the standard RL objective—the expected cumulative reward (\(r\)) over time.
-*   **\(α H(π(·|o_t))$$**: This is the entropy bonus, the secret sauce of SAC.
-    *   **\(H(π(·|o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
-    *   **\(α\)** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher \(α\) means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
+*   **$$\pi^*$$**: This represents the optimal policy we are trying to find.
+*   **$$\mathbb{E}_{...}[r(o_t, a_t)]$$**: This is the standard RL objective—the expected cumulative reward (\(r\)) over time.
+*   **$$α H(π(\cdot | o_t))$$**: This is the entropy bonus, the secret sauce of SAC.
+    *   **$$H(π(\cdot | o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
+    *   **$$α$$** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher $$α$$ means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
 
 ### Step 3: A Curriculum for a Digital Sailor
 
@@ -104,8 +92,8 @@ We don't want an agent that is a one-trick pony. To create a robust, seasoned sa
 **Table 2: Domain randomization envelope for sea-state parameters.**
 | Parameter               | Min/Max or Value           |
 | ---------------------- | ------------------------- |
-| H_s (significant height) | [0.5 m, 2.0 m]             |
-| Tp (peak period)        | [8 s, 12 s]                |
+| $$H_s$$ (significant height) | [0.5 m, 2.0 m]             |
+| $$T_p$$ (peak period)        | [8 s, 12 s]                |
 | Heading (relative)      | Fixed beam seas (90°)      |
 | Wave seed               | [0, 10⁶]                   |
 
@@ -143,8 +131,9 @@ A key metric in RL is "sample efficiency"—how much data is needed to learn? Th
 The final numbers speak for themselves. In the most challenging sea states, the robust, multi-wave RL agent even outperformed the specialist agent, proving the power of domain randomization.
 
 **Table 3: Final roll reduction percentage.**
+
 | Wave height | RL single wave | RL multiple waves |
-| :---------- | :------------- | :---------------- |
+| ---------- | ------------- | ---------------- |
 | 0.5 m       | 84%            | 81%               |
 | 1.5 m       | 52%            | 55%               |
 | 2.5 m       | 22%            | 28%               |
@@ -154,14 +143,15 @@ The final numbers speak for themselves. In the most challenging sea states, the 
 For reproducibility, the key hyperparameters and training details are provided below. The agent was trained for approximately 500,000 environment steps, which converged in a matter of hours on a standard desktop GPU.
 
 **Table 4: Key training hyperparameters.**
+
 | Parameter                 | Value                 |
-| :------------------------ | :-------------------- |
+| ------------------------ | -------------------- |
 | RL Algorithm              | Soft Actor-Critic (SAC) |
 | Learning Rate             | 3 × 10⁻⁴              |
-| Discount Factor (γ)       | 0.99                  |
+| Discount Factor ($$\gamma$$)       | 0.99                  |
 | Replay Buffer Size        | 5 × 10⁵               |
 | Batch Size                | 512                   |
-| Target Update (Polyak)    | 0.005                 |
+| Target Update ($$\tau$$)    | 0.005                 |
 | Optimizer                 | Adam                  |
 | Network Architecture      | 2x128 Hidden Layers (tanh) |
 
