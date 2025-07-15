@@ -104,17 +104,14 @@ Before looking at our RL agent's results, it's important to understand the basel
 After millions of simulation steps, our agent was ready. The training curves below show a clear story: the agent steadily improved its performance, reducing the ship's roll and maximizing its reward.
 
 <figure style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_rms.png" alt="Three plots showing training progress: Roll RMS decreases, Roll Reduction increases, and Cumulative Reward increases over 500k training steps." width="700">
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_roll_reduct.png" alt="Three plots showing training progress: Roll RMS decreases, Roll Reduction increases, and Cumulative Reward increases over 500k training steps." width="700">
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_reward.png" alt="Three plots showing training progress: Roll RMS decreases, Roll Reduction increases, and Cumulative Reward increases over 500k training steps." width="700">
+  <img src="http://kodendaal.github.io/assets/RL_STAB/combined_training.png" alt="Three plots showing training progress: Roll RMS decreases, Roll Reduction increases, and Cumulative Reward increases over 500k training steps." width="700">
   <figcaption><b>Figure 2:</b> Training process key indicators showing clear learning and convergence. The "random" agent is our robust, domain-randomized agent.</figcaption>
 </figure>
 
 The time-series plots below give a dramatic visual of the agent's success. Both the specialist agent (trained on a single wave pattern) and our robust generalist significantly suppress the roll compared to the uncontrolled "passive" state.
 
 <figure style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_random_domain_trace.png" width="800">
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_single_wave_trace.png" alt="Two time-series plots comparing uncontrolled roll (red) to RL-controlled roll (blue). The blue line shows a dramatic reduction in roll amplitude." width="800">
+  <img src="http://kodendaal.github.io/assets/RL_STAB/combined_trace.png" alt="Two time-series plots comparing uncontrolled roll (red) to RL-controlled roll (blue). The blue line shows a dramatic reduction in roll amplitude." width="800">
   <figcaption><b>Figure 3:</b> Time-trace comparison for (a) a single-wave agent and (b) our random-domain agent. The blue line (RL Roll) shows the dramatic reduction in motion compared to the uncontrolled red line (Passive Roll).</figcaption>
 </figure>
 
