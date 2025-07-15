@@ -19,7 +19,7 @@ This is the story of how we took on that challenge. We're going to take a deep d
 
 ---
 
-## Step 1: Building a Digital Ocean
+## Building a Digital Ocean
 
 You don’t teach an AI to swim by throwing it into the ocean. You build it a world-class digital swimming pool first. It’s simply not feasible (or safe!) to train a reinforcement learning (RL) agent on a real multi-million dollar yacht. We needed a robust, high-fidelity simulation environment where our agent could experiment, fail, and learn millions of times over without consequence.
 
@@ -54,7 +54,7 @@ To make the challenge realistic, we imposed physical limits, just as a real fin 
 
 ---
 
-## Step 2: The Brains of the Operation
+## The Brains of the Operation
 
 With our digital ocean ready, we needed an AI "brain" to navigate it. We chose a powerful, state-of-the-art RL algorithm called **Soft Actor-Critic (SAC)**. While other methods like Model Predictive Control (MPC) are powerful, they require an accurate model of the system dynamics. We chose SAC for its model-free nature, allowing it to learn directly from interaction in our complex, nonlinear environment.
 
@@ -75,9 +75,26 @@ Let's break this down:
     *   **$$H(π(\cdot \| o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
     *   **$$α$$** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher $$α$$ means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
 
+### Implementation Details
+
+For reproducibility, the key hyperparameters and training details are provided below. The agent was trained for approximately 500,000 environment steps, which converged in a matter of hours on a standard desktop GPU.
+
+**Table 4: Key training hyperparameters.**
+
+| Parameter                 | Value                 |
+| ------------------------ | -------------------- |
+| RL Algorithm              | Soft Actor-Critic (SAC) |
+| Learning Rate             | 3 × 10⁻⁴              |
+| Discount Factor ($$\gamma$$)       | 0.99                  |
+| Replay Buffer Size        | 5 × 10⁵               |
+| Batch Size                | 512                   |
+| Target Update ($$\tau$$)    | 0.005                 |
+| Optimizer                 | Adam                  |
+| Network Architecture      | 2x128 Hidden Layers (tanh) |
+
 ---
 
-## Step 3: A Curriculum for a Digital Sailor
+## A Curriculum for a Digital Sailor
 
 Having a brain and a playground isn't enough. You need a curriculum. For an RL agent, the curriculum is defined by the reward function and the training regimen.
 
@@ -108,18 +125,20 @@ This process forces the agent to learn a generalized policy that is effective ac
 
 ---
 
-## Step 4: Graduation Day
+## Graduation Day
 
 ### The Baseline: A Conventional Controller
 Before looking at our RL agent's results, it's important to understand the baseline. A conventional approach to this problem is a **Saturated Proportional-Derivative (SPD)** controller. It's a reliable, classic control strategy that adjusts the fins based on the current roll angle (the Proportional term) and the roll rate (the Derivative term). The "Saturated" part means its commands are capped at the physical limits of the fin hardware. While effective, it must be manually tuned for a specific set of conditions.
 
-### The Results
+### The Training Results
 After millions of simulation steps, our agent was ready. The training curves below show a clear story: the agent steadily improved its performance, reducing the ship's roll and maximizing its reward.
 
 <figure style="text-align: center;">
   <img src="http://kodendaal.github.io/assets/RL_STAB/combined_training.png" alt="Three plots showing training progress: Roll RMS decreases, Roll Reduction increases, and Cumulative Reward increases over 500k training steps.">
   <figcaption><b>Figure 2:</b> Training process key indicators showing clear learning and convergence.</figcaption>
 </figure>
+
+### Model Evaluation
 
 The time-series plots below give a dramatic visual of the agent's success. Both the specialist agent (trained on a single wave pattern) and our robust generalist significantly suppress the roll compared to the uncontrolled "passive" state.
 
@@ -146,23 +165,6 @@ The final numbers speak for themselves. In the most challenging sea states, the 
 | 0.5 m       | 84%            | 81%               |
 | 1.5 m       | 52%            | 55%               |
 | 2.5 m       | 22%            | 28%               |
-
-### Implementation Details
-
-For reproducibility, the key hyperparameters and training details are provided below. The agent was trained for approximately 500,000 environment steps, which converged in a matter of hours on a standard desktop GPU.
-
-**Table 4: Key training hyperparameters.**
-
-| Parameter                 | Value                 |
-| ------------------------ | -------------------- |
-| RL Algorithm              | Soft Actor-Critic (SAC) |
-| Learning Rate             | 3 × 10⁻⁴              |
-| Discount Factor ($$\gamma$$)       | 0.99                  |
-| Replay Buffer Size        | 5 × 10⁵               |
-| Batch Size                | 512                   |
-| Target Update ($$\tau$$)    | 0.005                 |
-| Optimizer                 | Adam                  |
-| Network Architecture      | 2x128 Hidden Layers (tanh) |
 
 ---
 
