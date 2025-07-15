@@ -8,7 +8,7 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/rl_ship_stabilizer.png" alt="rl stabilization" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/RL_STAB/ship_stabilization.png" alt="rl stabilization" style="width: 800px; height: auto;">
 </div>
 
 ---
