@@ -30,24 +30,24 @@ We developed a custom environment, compatible with the industry-standard OpenAI 
 
 At every time step (in our case, every 0.25 seconds), this dialogue unfolds:
 1.  **Observation:** The Environment tells the Agent what's happening. This isn't just a single number; it's a vector of crucial data:
-    `o_t = [Φ, \dot{Φ}, \ddot{\delta}, δ_act]ᵀ`
-    *   `Φ`: The current roll angle of the ship.
-    *   `\dot{Φ}`: The current roll rate (how fast it's rolling).
-    *   `\ddot{\delta}`: The fin's angular acceleration.
-    *   `δ_act`: The actual, current angle of the stabilization fin.
-2.  **Action (`a_t`):** Based on this observation, the Agent makes a decision: what should the new target angle for the fins be?
-3.  **Reward (`r_t`):** The Environment responds with a scalar "reward" signal. This is the critical feedback that guides the entire learning process.
+    $$o_t = [\phi, \dot{\phi}, \ddot{\delta}, \delta_{act}]^T$$
+    *   $$\phi$$: The current roll angle of the ship.
+    *   $$\dot{\phi}$$: The current roll rate (how fast it's rolling).
+    *   $$\ddot{\delta}$$: The fin's angular acceleration.
+    *   $$\delta_{act}$$: The actual, current angle of the stabilization fin.
+2.  **Action ($$a_t$$):** Based on this observation, the Agent makes a decision: what should the new target angle for the fins be?
+3.  **Reward ($$r_t$$):** The Environment responds with a scalar "reward" signal. This is the critical feedback that guides the entire learning process.
 
 To make the challenge realistic, we imposed physical limits, just as a real fin system would have.
 
 **Table 1: Observation and action limits used in the RL workflow.**
 | Symbol      | Physical meaning         | Range (deg) |
 | :---------- | :----------------------- | :---------- |
-| `Φ`         | Roll angle               | [-60, +60]  |
-| `\dot{Φ}`   | Roll rate (deg/s)        | [-360, +360] |
-| `\ddot{\delta}`  | Fin angular accel. (deg/s²) | [-60, +60]  |
-| `δ_act`     | Actual fin angle         | [-30, +30]  |
-| `a_t`         | Commanded fin angle      | [-30, +30]  |
+| $$\phi$$         | Roll angle               | [-60, +60]  |
+| $$\dot{\phi}$$   | Roll rate (deg/s)        | [-360, +360] |
+| $$\ddot{\delta}$$  | Fin angular accel. (deg/s²) | [-60, +60]  |
+| $$\delta_{act}$$     | Actual fin angle         | [-30, +30]  |
+| $$a_t$$         | Commanded fin angle      | [-30, +30]  |
 
 ### Step 2: The Brains of the Operation
 
@@ -58,16 +58,17 @@ With our digital ocean ready, we needed an AI "brain" to navigate it. We chose a
 The "soft" in Soft Actor-Critic comes from its core objective, which is based on the maximum entropy reinforcement learning framework. Unlike traditional RL algorithms that solely aim to maximize the cumulative reward, SAC aims to maximize a combination of the expected reward *and* the entropy of the policy.
 
 The optimization objective is:
+
 $$
 \pi^* = \arg\max_\pi \sum_t \mathbb{E}_{(\mathbf{o}_t, \mathbf{a}_t) \sim \pi} \left[ r(\mathbf{o}_t, \mathbf{a}_t) + \alpha \mathcal{H}(\pi(\cdot|\mathbf{o}_t)) \right]
 $$
 
 Let's break this down:
-*   **`\pi^*`**: This represents the optimal policy we are trying to find.
-*   **`\mathbb{E}_{...}[r(o_t, a_t)]`**: This is the standard RL objective—the expected cumulative reward (`r`) over time.
-*   **`α H(π(·|o_t))`**: This is the entropy bonus, the secret sauce of SAC.
-    *   **`H(π(·|o_t))`** is the Shannon entropy of the policy `π`. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
-    *   **`α`** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher `α` means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
+*   **$$\pi^*$$**: This represents the optimal policy we are trying to find.
+*   **$$\mathbb{E}_{...}[r(o_t, a_t)]$$**: This is the standard RL objective—the expected cumulative reward ($$r$$) over time.
+*   **$$α H(π(·|o_t))$$**: This is the entropy bonus, the secret sauce of SAC.
+    *   **$$H(π(·|o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
+    *   **$$α$$** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher $$α$$ means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
 
 ### Step 3: A Curriculum for a Digital Sailor
 
@@ -75,11 +76,13 @@ Having a brain and a playground isn't enough. You need a curriculum. For an RL a
 
 #### The Reward: Defining 'Good'
 
-The reward function is how we communicate our goal to the agent. Our objective is to achieve stable and efficient roll damping. We translated this into a concrete mathematical formula. The reward `R_t` at any time step `t` is:
+The reward function is how we communicate our goal to the agent. Our objective is to achieve stable and efficient roll damping. We translated this into a concrete mathematical formula. The reward $$R_t$$ at any time step $$t$$ is:
+
 $$
 R_t = -w_\phi\,\phi_t^2 - w_{\dot\phi}\,\dot\phi_t^2
 $$
-This function explicitly penalizes two things: the squared residual roll angle (`\phi_t^2`) and the squared roll rate (`\dot\phi_t^2`). By penalizing the square of the values, we disproportionately punish larger deviations, strongly encouraging the agent to keep the ship stable. The weights `w_φ` and `w_{\dot{φ}}` allow us to balance the importance of these two objectives.
+
+This function explicitly penalizes two things: the squared residual roll angle ($$\phi_t^2$$) and the squared roll rate ($$\dot\phi_t^2$$). By penalizing the square of the values, we disproportionately punish larger deviations, strongly encouraging the agent to keep the ship stable. The weights $$w_{\phi}$$ and $$w_{\dot{\phi}}$$ allow us to balance the importance of these two objectives.
 
 #### The Training Regimen: Domain Randomization
 
