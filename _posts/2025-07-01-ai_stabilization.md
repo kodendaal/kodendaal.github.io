@@ -30,7 +30,7 @@ We developed a custom environment, compatible with the industry-standard OpenAI 
 
 At every time step (in our case, every 0.25 seconds), this dialogue unfolds:
 1.  **Observation:** The Environment tells the Agent what's happening. This isn't just a single number; it's a vector of crucial data:
-    $$o_t = [\phi, \dot{\phi}, \ddot{\delta}, \delta_{act}]^T$$
+    \(o_t = [\phi, \dot{\phi}, \ddot{\delta}, \delta_{act}]^T\)
     *   $$\phi$$: The current roll angle of the ship.
     *   $$\dot{\phi}$$: The current roll rate (how fast it's rolling).
     *   $$\ddot{\delta}$$: The fin's angular acceleration.
@@ -53,11 +53,11 @@ To make the challenge realistic, we imposed physical limits, just as a real fin 
 
 | Symbol          | Physical meaning                | Range&nbsp;(deg) |
 |-----------------|---------------------------------|------------------|
-| $\phi$          | Roll angle                      | \[-60, +60]      |
-| $\dot\phi$      | Roll rate (deg/s)               | \[-360, +360]    |
-| $\ddot\delta$   | Fin angular accel. (deg/s$^2$)  | \[-60, +60]      |
-| $\delta_\text{act}$ | Actual fin angle            | \[-30, +30]      |
-| $a_t$           | Commanded fin angle             | \[-30, +30]      |
+| \(\phi\)          | Roll angle                      | \[-60, +60]      |
+| \(\dot\phi\)      | Roll rate (deg/s)               | \[-360, +360]    |
+| \(\ddot\delta\)   | Fin angular accel. (deg/s$^2$)  | \[-60, +60]      |
+| \(\delta_\text{act}\) | Actual fin angle            | \[-30, +30]      |
+| \(a_t\)           | Commanded fin angle             | \[-30, +30]      |
 
 
 
@@ -76,11 +76,11 @@ $$
 $$
 
 Let's break this down:
-*   **$$\pi^*$$**: This represents the optimal policy we are trying to find.
-*   **$$\mathbb{E}_{...}[r(o_t, a_t)]$$**: This is the standard RL objective—the expected cumulative reward ($$r$$) over time.
-*   **$$α H(π(·|o_t))$$**: This is the entropy bonus, the secret sauce of SAC.
-    *   **$$H(π(·|o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
-    *   **$$α$$** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher $$α$$ means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
+*   **\(\pi^*\)**: This represents the optimal policy we are trying to find.
+*   **\(\mathbb{E}_{...}[r(o_t, a_t)]$$**: This is the standard RL objective—the expected cumulative reward (\(r\)) over time.
+*   **\(α H(π(·|o_t))$$**: This is the entropy bonus, the secret sauce of SAC.
+    *   **\(H(π(·|o_t))$$** is the Shannon entropy of the policy $$\pi$$. Entropy is a measure of randomness. By maximizing entropy, the agent is encouraged to explore and avoid collapsing into a deterministic, and potentially sub-optimal, strategy too early.
+    *   **\(α\)** is the temperature parameter, which controls the importance of the entropy term versus the reward. A higher \(α\) means more exploration. In modern SAC implementations, this is a tunable parameter that is automatically adjusted to maintain a target entropy.
 
 ### Step 3: A Curriculum for a Digital Sailor
 
@@ -102,8 +102,8 @@ We don't want an agent that is a one-trick pony. To create a robust, seasoned sa
 
 **Table 2: Domain randomization envelope for sea-state parameters.**
 | Parameter               | Min/Max or Value           |
-| :---------------------- | :------------------------- |
-| Hs (significant height) | [0.5 m, 2.0 m]             |
+| ---------------------- | ------------------------- |
+| H_s (significant height) | [0.5 m, 2.0 m]             |
 | Tp (peak period)        | [8 s, 12 s]                |
 | Heading (relative)      | Fixed beam seas (90°)      |
 | Wave seed               | [0, 10⁶]                   |
