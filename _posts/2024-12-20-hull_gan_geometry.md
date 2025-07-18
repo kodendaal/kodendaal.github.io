@@ -136,6 +136,13 @@ While the current DCGAN model demonstrated promise, there’s room for advanceme
 2. **Enhanced Datasets**: Incorporate more diverse geometries, including challenging features like bulbous bows.
 3. **Physics Integration**: Embed hydrodynamic properties directly into the model.
 
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/future_steps.png" alt="generator discriminator pipeline" style="width: 800px; height: auto;">
+</div>
+
+
+
 ---
 
 ## Conclusion
