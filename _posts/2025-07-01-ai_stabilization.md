@@ -134,9 +134,9 @@ Before looking at our RL agent's results, it's important to understand the basel
 After millions of simulation steps, our agent was ready. The training curves below show a clear story: the agent steadily improved its performance, reducing the ship's roll and maximizing its reward.
 
 <figure style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_rms.png">
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_roll_reduct.png" >
-  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_reward.png">
+  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_rms.png" style="width: 55%;">
+  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_roll_reduct.png" style="width: 55%;">
+  <img src="http://kodendaal.github.io/assets/RL_STAB/rl_stabilization_reward.png" style="width: 55%;">
   <figcaption><b>Figure 2:</b> Training process key indicators showing: (a) Roll RMS decreases, (b) Roll Reduction increases, and (c) Cumulative Reward.</figcaption>
 </figure>
 
