@@ -1,5 +1,5 @@
 ---
-title:  "How I Built a Fun Team Voting App (Without Losing My Mind!)"
+title:  "Click, Vote, Repeat: A Tiny App for Team Naming"
 mathjax: true
 layout: post
 categories: 
