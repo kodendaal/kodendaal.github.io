@@ -8,7 +8,7 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/thesis_front_image.png" alt="AI Thesis" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/ai_thesis_logo.png" alt="AI Thesis" style="width: 800px; height: auto;">
 </div>
 
 In the quest for sustainable yachting, accurately predicting energy consumption has been a persistent challenge. This is where my graduate project, awarded the **Maritime Designer of the Year 2022**, made a breakthrough by introducing a novel methodology to bridge the gap between predicted and actual energy usage. Leveraging **Grey-Box Modelling (GBM)**, my approach combined physics-based White-Box Models (WBM) and data-driven Black-Box Models (BBM) to deliver unprecedented accuracy and insights.
@@ -54,6 +54,13 @@ By bridging the gap between prediction and reality, this Grey-Box approach is a 
 # Links to open-access publications
 
 **This work was awarded the Maritime Designer of the Year Award 2022 in the Netherlands, recognizing its significant contribution to the field.**
+
+
+<div style="text-align: center;">
+  <img src="http://kodendaal.github.io/assets/thesis_front_image.png" alt="AI Thesis" style="width: 300px; height: auto;">
+</div>
+
+
 
 **[Peer-Reviewd Journal Link](https://www.sciencedirect.com/science/article/pii/S2092678222000504?via%3Dihub)**
 
