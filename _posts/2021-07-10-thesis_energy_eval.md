@@ -57,7 +57,7 @@ By bridging the gap between prediction and reality, this Grey-Box approach is a 
 
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/thesis_front_image.png" alt="AI Thesis" style="width: 300px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/thesis_front_image.png" alt="AI Thesis" style="width: 350px; height: auto;">
 </div>
 
 
