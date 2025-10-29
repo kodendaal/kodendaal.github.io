@@ -8,7 +8,7 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/surrogate_optimization_logo.png" alt="surrogate optimization" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/surrogate_optimization.png" alt="surrogate optimization" style="width: 800px; height: auto;">
 </div>
 
 ## COMING SOON
