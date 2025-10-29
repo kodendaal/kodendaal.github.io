@@ -22,12 +22,3 @@ COMING SOON: ADVANCED SURROGATES AND OPTIMIZATION WORKSHOP
 ></script>
 
 <gradio-app src="https://kode24-usecase-3-active-learn.hf.space"></gradio-app>
-
-
-<iframe
-	src="https://kode24-usecase-3-active-learn.hf.space"
-	frameborder="0"
-	width="850"
-	height="450"
-></iframe>
-
