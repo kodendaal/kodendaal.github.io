@@ -24,7 +24,7 @@ Below is a brief look at *what we reproduced*, *how we improved it*, and *what w
 
 ---
 
-# 🔍 Why MNet?
+# Why MNet?
 
 MNet introduces a *mesh-like* U-Net architecture with parallel 2D and 3D encoder-decoder branches. Instead of choosing between 2D or 3D convolutions, MNet blends both inside each block using manually defined fusion rules (add / subtract / concatenate).
 
@@ -41,7 +41,7 @@ Our goals were:
 
 ---
 
-# 📦 Experimental Setup
+# Experimental Setup
 
 We used nnU-Net v1 pipelines for preprocessing, augmentation, and patch sampling—matching the original implementation as closely as possible.
 Datasets:
@@ -53,7 +53,7 @@ Training was performed on 16-GB GPUs (Lightning.ai), so long schedules (500 epoc
 
 ---
 
-# ✅ Reproducing MNet
+# Reproducing MNet
 
 Our reproduction closely matched the original paper’s reported numbers:
 
@@ -72,7 +72,7 @@ Our reproduction closely matched the original paper’s reported numbers:
 
 ---
 
-# 🧩 Extension 1: Fusion Gating
+# Extension 1: Fusion Gating
 
 The original MNet uses *fixed* operations to merge 2D and 3D feature streams. But fixed rules cannot adapt to variations in local anatomy, noise, or slice spacing.
 
@@ -96,7 +96,7 @@ Result:
 
 ---
 
-# 🧩 Extension 2: VMamba for Depth Modeling
+# Extension 2: VMamba for Depth Modeling
 
 3D convolutions struggle with long-range dependencies when z-resolution is coarse. Attention-based models help, but are expensive in 3D.
 
@@ -116,7 +116,7 @@ Results:
 
 ---
 
-# 🎯 Results Summary
+# Results Summary
 
 ### ✔ Reproduction Success
 
@@ -135,7 +135,7 @@ Across PROMISE (1–4 mm spacing), Dice only dropped **~1.5 points** for extende
 
 ---
 
-# 💡 Key Takeaways
+# Key Takeaways
 
 * **MNet is indeed reproducible**—its hybrid 2D/3D design is robust and stable.
 * **Learned fusion works better than rigid fusion.** Spatial Gating provides a free performance boost with minimal overhead.
@@ -144,7 +144,7 @@ Across PROMISE (1–4 mm spacing), Dice only dropped **~1.5 points** for extende
 
 ---
 
-# 🚧 Limitations & Future Directions
+# Limitations & Future Directions
 
 Due to compute limitations, LiTS results were based on a 50-case subset and 150-epoch schedules. With full dataset access and extended training, we expect larger gains—especially for VMamba.
 
@@ -157,7 +157,7 @@ Promising next steps:
 
 ---
 
-# 📘 Closing Thoughts
+# Closing Thoughts
 
 This project shows that **MNet remains a strong and elegant baseline** for anisotropic medical segmentation—but also that small, thoughtful architectural tweaks can further improve robustness and generalization.
 
