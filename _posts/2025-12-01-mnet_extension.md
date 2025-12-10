@@ -1,5 +1,5 @@
 ---
-title:  " Reproducing and Extending MNet for Anisotropic Medical Image Segmentation"
+title:  "When 2D Meets 3D: Rethinking Medical Segmentation Through MNet"
 mathjax: true
 layout: post
 categories: 
@@ -165,7 +165,7 @@ By adding adaptive fusion and efficient global depth modeling, we demonstrate me
 
 ---
 
-**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/CS6250_mnet_final_project.pdf" target="_blank">please click here</a> to access the PDF directly.**
+**Note: If the embedded PDF is not displayed properly or if you are viewing this on a mobile device, <a href="https://kodendaal.github.io/assets/CS6250_mnet_final_project_1.pdf" target="_blank">please click here</a> to access the PDF directly.**
 
 <div id="adobe-dc-view" style="width: 100%;"></div>
 <script src="https://acrobatservices.adobe.com/view-sdk/viewer.js"></script>
@@ -173,7 +173,7 @@ By adding adaptive fusion and efficient global depth modeling, we demonstrate me
 	document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
 		var adobeDCView = new AdobeDC.View({clientId: "573c32d5dd174f50832b5a2a28c74648", divId: "adobe-dc-view"});
 		adobeDCView.previewFile({
-			content:{location: {url: "https://kodendaal.github.io/assets/CS6250_mnet_final_project.pdf"}},
+			content:{location: {url: "https://kodendaal.github.io/assets/CS6250_mnet_final_project_1.pdf"}},
 			metaData:{fileName: "CS6250_mnet_final_project"}
 		}, {embedMode: "IN_LINE"});
 	});
