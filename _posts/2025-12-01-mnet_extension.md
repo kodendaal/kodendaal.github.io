@@ -8,7 +8,7 @@ categories:
 ---
 
 <div style="text-align: center;">
-  <img src="http://kodendaal.github.io/assets/mnet.png" alt="deepracer" style="width: 800px; height: auto;">
+  <img src="http://kodendaal.github.io/assets/mnet.png" alt="mnet" style="width: 800px; height: auto;">
 </div>
 
 
