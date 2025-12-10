@@ -1,5 +1,5 @@
 ---
-title:  "A step in the Right Direction: Surrogates and Optimization Workshop"
+title:  "A Step in the Right Direction: Surrogates and Optimization Workshop"
 mathjax: true
 layout: post
 categories: 
