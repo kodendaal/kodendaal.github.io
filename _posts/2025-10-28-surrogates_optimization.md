@@ -20,7 +20,8 @@ Interactive demos show:
 * **Adaptive Learning** — Bayesian optimization that selects new samples based on model uncertainty.
 
 
-**Note: If the embedded Huggingface Spaces are not loaded properly or if you are viewing this on a mobile device, please click on the usecase links directly.**
+## <span style="color:red">**Note: If the embedded Huggingface Spaces are not loaded properly or if you are viewing this on a mobile device, please click on the usecase links directly or refresh page.**</span> 
+
 
 ---
 
